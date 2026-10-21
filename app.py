@@ -60,7 +60,7 @@ with st.sidebar:
     page = st.radio("Workspace", ["Executive overview", "Contact analytics", "AI assistant", "Evaluation lab", "AI risk & governance", "Business case", "Product spec"], label_visibility="collapsed")
     st.divider()
     st.markdown("**Demo status**")
-    st.success("Synthetic data loaded", icon="✓")
+    st.success("Synthetic data loaded")
     st.caption("No issuer systems or customer accounts are connected.")
     st.divider()
     st.caption("Independent portfolio prototype")
