@@ -90,7 +90,7 @@ if page == "Executive overview":
     c3.metric("Transfer rate", pct(transfer_rate))
     c4.metric("Avg. handling time", f"{avg_aht:.1f} min")
     c5.metric("Avg. CSAT", f"{csat:.2f}/5")
-    st.markdown("<div class='small-note'>All values above are computed from synthetic records and are not estimates of Capital One's actual performance.</div>", unsafe_allow_html=True)
+    st.markdown("<div class='small-note'>All values above are computed from synthetic records.</div>", unsafe_allow_html=True)
     st.write("")
     left, right = st.columns([1.2, 1])
     with left:
@@ -162,7 +162,7 @@ elif page == "Contact analytics":
 
 elif page == "AI assistant":
     hero("Policy-grounded AI assistant", "Ask a general card-servicing question. The demo retrieves sample policy text, drafts a cautious response, shows evidence, and flags when a secure human workflow is appropriate.", "WORKING PROTOTYPE")
-    st.warning("Knowledge documents are fictional examples for product demonstration—not Capital One policy. The assistant has no account access and cannot perform transactions or account changes.")
+    st.warning("Knowledge documents are fictional examples for product demonstration. The assistant has no account access and cannot perform transactions or account changes.")
     use_llm = False
     if os.environ.get("OPENAI_API_KEY"):
         use_llm = st.toggle("Use optional OpenAI response drafting", value=False, help="The app sends your entered question and retrieved sample-policy text to the configured OpenAI API. Do not enter personal or account data.")
@@ -276,7 +276,7 @@ elif page == "AI risk & governance":
     )
     st.warning(
         "Portfolio simulation only. The inventory, owners, approvals, thresholds, and monitoring signals below are illustrative. "
-        "They are not Capital One controls, formal compliance determinations, or live production telemetry."
+        "formal compliance determinations, or live production telemetry."
     )
 
     # Calculate the same deterministic metrics used by the Evaluation Lab so the
@@ -565,7 +565,7 @@ elif page == "AI risk & governance":
 
 elif page == "Business case":
     hero("Business case & scenario planning", "Translate contact volume and a containment hypothesis into labor value, AI operating cost, and a Year 1 investment view.", "ILLUSTRATIVE ECONOMICS")
-    st.warning("These are scenario assumptions applied to synthetic contact records—not actual Capital One volumes, costs, savings, or approved financial forecasts.")
+    st.warning("These are scenario assumptions applied to synthetic contact records")
     all_intents = sorted(contacts["intent"].unique())
     default_intents = ["interest_explanation", "payment_due", "fee_explanation", "payment_processing", "credit_limit"]
     selected = st.multiselect("In-scope first-release intents", all_intents, default=default_intents, format_func=lambda x: INTENT_TITLES.get(x,x))
@@ -615,4 +615,4 @@ else:
     st.download_button("Download project strategy", (ROOT / "docs" / "product_strategy.md").read_bytes(), file_name="product_strategy.md", mime="text/markdown")
 
 st.divider()
-st.caption("CardServ AI is an independent portfolio concept using synthetic data and illustrative sample policies. It is not affiliated with or endorsed by Capital One.")
+st.caption("CardServ AI is an independent portfolio concept using synthetic data and illustrative sample policies")
