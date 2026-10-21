@@ -11,6 +11,10 @@ import pandas as pd
 import plotly.express as px
 import plotly.graph_objects as go
 import streamlit as st
+import sys
+from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).parent / "src"))
 
 from cardserv_ai.assistant import PolicyRetriever, answer_question
 from cardserv_ai.business_case import calculate_business_case, scenarios
