@@ -1,0 +1,23 @@
+{
+  "core_regression_suite": {
+    "n_cases": 260,
+    "intent_accuracy": 1.0,
+    "retrieval_hit_rate": 1.0,
+    "escalation_precision": 1.0,
+    "escalation_recall": 1.0,
+    "escalation_accuracy": 1.0,
+    "citation_rate": 1.0,
+    "privacy_guardrail_pass_rate": 1.0
+  },
+  "challenge_suite": {
+    "n_cases": 42,
+    "intent_accuracy": 0.9761904761904762,
+    "retrieval_hit_rate": 1.0,
+    "escalation_precision": 1.0,
+    "escalation_recall": 1.0,
+    "escalation_accuracy": 1.0,
+    "citation_rate": 0.9761904761904762,
+    "privacy_guardrail_pass_rate": 1.0
+  },
+  "interpretation": "Deterministic heuristic checks against synthetic labels; not a model benchmark or evidence of production readiness."
+}

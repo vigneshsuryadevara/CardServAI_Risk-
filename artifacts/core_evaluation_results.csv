@@ -1,0 +1,1109 @@
+case_id,question,expected_intent,expected_source_id,expected_escalation,risk_level,predicted_intent,intent_correct,retrieval_hit,predicted_escalation,expected_escalation_bool,escalation_correct,citation_present,privacy_guardrail_pass,response_preview,retrieved_source_ids
+EVAL-0168,What is the process to request a limit review?,credit_limit,KB-ACC-001,True,Low,credit_limit,True,True,True,True,True,True,True,"Credit-limit decisions and account changes depend on issuer rules and account-specific review. I cannot change your limit or predict an approval here. Use the authenticated app or the approved servicing workflow to request a review or check your current account-specific status.
+
+Sources: Credit Limit and Account Changes Guide (KB-ACC-001); Card Security Guide (KB-SEC-001). These are illustrative sample documents, not official issuer policy.
+
+Recommended next step: route to an authenticated servi","KB-ACC-001, KB-SEC-001, KB-FEE-001"
+EVAL-0015,I do not understand the interest amount on the statement.,interest_explanation,KB-INT-001,False,Medium,interest_explanation,True,True,False,False,True,True,True,"Interest can still appear after a payment because the result depends on the card agreement, statement cycle, grace-period eligibility, balance type, and payment timing. Compare the interest line, statement balance, and payment date on your statement. I cannot determine your exact charge without verified account details. If those entries do not reconcile, ask servicing to review the account.
+
+Sources: Interest and Grace Period Guide (KB-INT-001); Payments and Due Dates Guide (KB-PAY-001). These a","KB-INT-001, KB-PAY-001"
+EVAL-0065,Why was I charged a late fee?,fee_explanation,KB-FEE-001,False,Medium,fee_explanation,True,True,False,False,True,True,True,"Fee triggers and possible adjustments depend on the card agreement and account history. Review the fee line and the relevant agreement terms. I cannot confirm the reason for a specific fee or promise a waiver/refund from this demo; a fee reversal request needs an approved account-level review.
+
+Sources: Fees and Adjustments Guide (KB-FEE-001); Interest and Grace Period Guide (KB-INT-001). These are illustrative sample documents, not official issuer policy.","KB-FEE-001, KB-INT-001, KB-DIS-001"
+EVAL-0120,I need help with a disputed transaction.,transaction_dispute,KB-DIS-001,True,High,transaction_dispute,True,True,True,True,True,True,True,"For a transaction you do not recognize or believe is incorrect, use the issuer's official authenticated dispute or fraud-reporting channel promptly and keep relevant transaction details or receipts. I cannot remove a charge or determine the dispute outcome here. Do not share full card numbers, passwords, PINs, or one-time codes in chat.
+
+Sources: Transactions and Disputes Guide (KB-DIS-001); Payments and Due Dates Guide (KB-PAY-001). These are illustrative sample documents, not official issuer p","KB-DIS-001, KB-PAY-001"
+EVAL-0159,My bank says the payment was sent but the card balance did not change.,payment_processing,KB-PAY-001,True,Medium,payment_processing,True,True,True,True,True,True,True,"Payment posting can depend on the payment method, cut-off time, weekends, holidays, and issuer processing rules. I cannot verify whether your specific payment has posted. Check the authenticated app, and contact secure servicing if the payment is missing or the status appears incorrect.
+
+Sources: Payments and Due Dates Guide (KB-PAY-001); Interest and Grace Period Guide (KB-INT-001). These are illustrative sample documents, not official issuer policy.
+
+Recommended next step: route to an authenti","KB-PAY-001, KB-INT-001, KB-SEC-001"
+EVAL-0125,I want to report a card transaction I did not make.,transaction_dispute,KB-DIS-001,True,High,transaction_dispute,True,True,True,True,True,True,True,"For a transaction you do not recognize or believe is incorrect, use the issuer's official authenticated dispute or fraud-reporting channel promptly and keep relevant transaction details or receipts. I cannot remove a charge or determine the dispute outcome here. Do not share full card numbers, passwords, PINs, or one-time codes in chat.
+
+Sources: Transactions and Disputes Guide (KB-DIS-001); Card Security Guide (KB-SEC-001). These are illustrative sample documents, not official issuer policy.
+
+R","KB-DIS-001, KB-SEC-001, KB-PAY-001"
+EVAL-0039,Please help me: how do I check how much I owe by the due date?,payment_due,KB-PAY-001,False,Low,payment_due,True,True,False,False,True,True,True,"Your statement and the issuer's authenticated app are the sources of truth for the minimum payment and due date. I do not have access to your account, so I cannot quote your personal amount or due date. Check the current statement or authenticated app before making a payment.
+
+Sources: Payments and Due Dates Guide (KB-PAY-001); Interest and Grace Period Guide (KB-INT-001). These are illustrative sample documents, not official issuer policy.","KB-PAY-001, KB-INT-001"
+EVAL-0078,Why is there a service fee on my account?,fee_explanation,KB-FEE-001,False,Medium,fee_explanation,True,True,False,False,True,True,True,"Fee triggers and possible adjustments depend on the card agreement and account history. Review the fee line and the relevant agreement terms. I cannot confirm the reason for a specific fee or promise a waiver/refund from this demo; a fee reversal request needs an approved account-level review.
+
+Sources: Fees and Adjustments Guide (KB-FEE-001); Credit Limit and Account Changes Guide (KB-ACC-001). These are illustrative sample documents, not official issuer policy.","KB-FEE-001, KB-ACC-001, KB-INT-001"
+EVAL-0068,How can I understand a fee on my statement? What should I do next?,fee_explanation,KB-FEE-001,False,Medium,fee_explanation,True,True,False,False,True,True,True,"Fee triggers and possible adjustments depend on the card agreement and account history. Review the fee line and the relevant agreement terms. I cannot confirm the reason for a specific fee or promise a waiver/refund from this demo; a fee reversal request needs an approved account-level review.
+
+Sources: Fees and Adjustments Guide (KB-FEE-001); Interest and Grace Period Guide (KB-INT-001). These are illustrative sample documents, not official issuer policy.","KB-FEE-001, KB-INT-001, KB-PAY-001"
+EVAL-0243,I see purchases I didn't make and suspect fraud.,fraud_suspicion,KB-SEC-001,True,High,fraud_suspicion,True,True,True,True,True,True,True,"Treat suspected unauthorized activity as time-sensitive. Use the issuer's official authenticated fraud-reporting channel immediately. I cannot verify transactions or secure the account from this demo. Never share passwords, PINs, full card numbers, or one-time codes in chat.
+
+Sources: Card Security Guide (KB-SEC-001); Transactions and Disputes Guide (KB-DIS-001). These are illustrative sample documents, not official issuer policy.
+
+Recommended next step: route to an authenticated servicing workf","KB-SEC-001, KB-DIS-001"
+EVAL-0096,Please help me: where can I see the card fees and terms? What should I do next?,fee_explanation,KB-FEE-001,False,Medium,fee_explanation,True,True,False,False,True,True,True,"Fee triggers and possible adjustments depend on the card agreement and account history. Review the fee line and the relevant agreement terms. I cannot confirm the reason for a specific fee or promise a waiver/refund from this demo; a fee reversal request needs an approved account-level review.
+
+Sources: Fees and Adjustments Guide (KB-FEE-001); Interest and Grace Period Guide (KB-INT-001). These are illustrative sample documents, not official issuer policy.","KB-FEE-001, KB-INT-001, KB-SEC-001"
+EVAL-0177,Please help me: can I request a higher credit limit?,credit_limit,KB-ACC-001,True,Low,credit_limit,True,True,True,True,True,True,True,"Credit-limit decisions and account changes depend on issuer rules and account-specific review. I cannot change your limit or predict an approval here. Use the authenticated app or the approved servicing workflow to request a review or check your current account-specific status.
+
+Sources: Credit Limit and Account Changes Guide (KB-ACC-001); Fees and Adjustments Guide (KB-FEE-001). These are illustrative sample documents, not official issuer policy.
+
+Recommended next step: route to an authenticate","KB-ACC-001, KB-FEE-001, KB-SEC-001"
+EVAL-0218,My wallet was stolen and my card was inside.,lost_stolen_card,KB-SEC-001,True,High,lost_stolen_card,True,True,True,True,True,True,True,"If your card is lost or stolen, use the issuer's official app or verified contact channel immediately to lock or report it. This demo cannot lock, cancel, or replace a card. Do not share your full card number, password, PIN, or one-time passcode here.
+
+Sources: Card Security Guide (KB-SEC-001); Fees and Adjustments Guide (KB-FEE-001). These are illustrative sample documents, not official issuer policy.
+
+Recommended next step: route to an authenticated servicing workflow or qualified human specia","KB-SEC-001, KB-FEE-001, KB-PAY-001"
+EVAL-0056,What does minimum payment mean?,payment_due,KB-PAY-001,False,Low,payment_due,True,True,False,False,True,True,True,"Your statement and the issuer's authenticated app are the sources of truth for the minimum payment and due date. I do not have access to your account, so I cannot quote your personal amount or due date. Check the current statement or authenticated app before making a payment.
+
+Sources: Payments and Due Dates Guide (KB-PAY-001); Interest and Grace Period Guide (KB-INT-001). These are illustrative sample documents, not official issuer policy.","KB-PAY-001, KB-INT-001, KB-DIS-001"
+EVAL-0087,Can you refund the late charge?,fee_explanation,KB-FEE-001,True,Medium,fee_explanation,True,True,True,True,True,True,True,"Fee triggers and possible adjustments depend on the card agreement and account history. Review the fee line and the relevant agreement terms. I cannot confirm the reason for a specific fee or promise a waiver/refund from this demo; a fee reversal request needs an approved account-level review.
+
+Sources: Fees and Adjustments Guide (KB-FEE-001); Transactions and Disputes Guide (KB-DIS-001). These are illustrative sample documents, not official issuer policy.
+
+Recommended next step: route to an aut","KB-FEE-001, KB-DIS-001, KB-SEC-001"
+EVAL-0157,Why is my recent payment not reflected?,payment_processing,KB-PAY-001,True,Medium,payment_processing,True,True,True,True,True,True,True,"Payment posting can depend on the payment method, cut-off time, weekends, holidays, and issuer processing rules. I cannot verify whether your specific payment has posted. Check the authenticated app, and contact secure servicing if the payment is missing or the status appears incorrect.
+
+Sources: Payments and Due Dates Guide (KB-PAY-001); Interest and Grace Period Guide (KB-INT-001). These are illustrative sample documents, not official issuer policy.
+
+Recommended next step: route to an authenti","KB-PAY-001, KB-INT-001, KB-SEC-001"
+EVAL-0098,Please help me: there is a wrong transaction on my card.,transaction_dispute,KB-DIS-001,True,High,transaction_dispute,True,True,True,True,True,True,True,"For a transaction you do not recognize or believe is incorrect, use the issuer's official authenticated dispute or fraud-reporting channel promptly and keep relevant transaction details or receipts. I cannot remove a charge or determine the dispute outcome here. Do not share full card numbers, passwords, PINs, or one-time codes in chat.
+
+Sources: Transactions and Disputes Guide (KB-DIS-001); Card Security Guide (KB-SEC-001). These are illustrative sample documents, not official issuer policy.
+
+R","KB-DIS-001, KB-SEC-001, KB-FEE-001"
+EVAL-0006,Why does my balance have an interest charge?,interest_explanation,KB-INT-001,False,Medium,interest_explanation,True,True,False,False,True,True,True,"Interest can still appear after a payment because the result depends on the card agreement, statement cycle, grace-period eligibility, balance type, and payment timing. Compare the interest line, statement balance, and payment date on your statement. I cannot determine your exact charge without verified account details. If those entries do not reconcile, ask servicing to review the account.
+
+Sources: Interest and Grace Period Guide (KB-INT-001); Transactions and Disputes Guide (KB-DIS-001). Thes","KB-INT-001, KB-DIS-001, KB-PAY-001"
+EVAL-0127,Can you remove an unauthorized charge?,transaction_dispute,KB-DIS-001,True,High,transaction_dispute,True,True,True,True,True,True,True,"For a transaction you do not recognize or believe is incorrect, use the issuer's official authenticated dispute or fraud-reporting channel promptly and keep relevant transaction details or receipts. I cannot remove a charge or determine the dispute outcome here. Do not share full card numbers, passwords, PINs, or one-time codes in chat.
+
+Sources: Transactions and Disputes Guide (KB-DIS-001); Fees and Adjustments Guide (KB-FEE-001). These are illustrative sample documents, not official issuer pol","KB-DIS-001, KB-FEE-001, KB-SEC-001"
+EVAL-0029,What might cause interest even after a payment?,interest_explanation,KB-INT-001,False,Medium,interest_explanation,True,True,False,False,True,True,True,"Interest can still appear after a payment because the result depends on the card agreement, statement cycle, grace-period eligibility, balance type, and payment timing. Compare the interest line, statement balance, and payment date on your statement. I cannot determine your exact charge without verified account details. If those entries do not reconcile, ask servicing to review the account.
+
+Sources: Payments and Due Dates Guide (KB-PAY-001); Interest and Grace Period Guide (KB-INT-001). These a","KB-PAY-001, KB-INT-001, KB-SEC-001"
+EVAL-0113,Please help me: i don't recognize a purchase on my statement.,transaction_dispute,KB-DIS-001,True,High,transaction_dispute,True,True,True,True,True,True,True,"For a transaction you do not recognize or believe is incorrect, use the issuer's official authenticated dispute or fraud-reporting channel promptly and keep relevant transaction details or receipts. I cannot remove a charge or determine the dispute outcome here. Do not share full card numbers, passwords, PINs, or one-time codes in chat.
+
+Sources: Transactions and Disputes Guide (KB-DIS-001); Interest and Grace Period Guide (KB-INT-001). These are illustrative sample documents, not official issue","KB-DIS-001, KB-INT-001, KB-PAY-001"
+EVAL-0133,Why is my recent payment not reflected?,payment_processing,KB-PAY-001,True,Medium,payment_processing,True,True,True,True,True,True,True,"Payment posting can depend on the payment method, cut-off time, weekends, holidays, and issuer processing rules. I cannot verify whether your specific payment has posted. Check the authenticated app, and contact secure servicing if the payment is missing or the status appears incorrect.
+
+Sources: Payments and Due Dates Guide (KB-PAY-001); Interest and Grace Period Guide (KB-INT-001). These are illustrative sample documents, not official issuer policy.
+
+Recommended next step: route to an authenti","KB-PAY-001, KB-INT-001, KB-SEC-001"
+EVAL-0045,Can you tell me my minimum due?,payment_due,KB-PAY-001,False,Low,payment_due,True,True,False,False,True,True,True,"Your statement and the issuer's authenticated app are the sources of truth for the minimum payment and due date. I do not have access to your account, so I cannot quote your personal amount or due date. Check the current statement or authenticated app before making a payment.
+
+Sources: Payments and Due Dates Guide (KB-PAY-001). These are illustrative sample documents, not official issuer policy.",KB-PAY-001
+EVAL-0020,My card statement shows finance charges; why?,interest_explanation,KB-INT-001,False,Medium,interest_explanation,True,True,False,False,True,True,True,"Interest can still appear after a payment because the result depends on the card agreement, statement cycle, grace-period eligibility, balance type, and payment timing. Compare the interest line, statement balance, and payment date on your statement. I cannot determine your exact charge without verified account details. If those entries do not reconcile, ask servicing to review the account.
+
+Sources: Interest and Grace Period Guide (KB-INT-001); Payments and Due Dates Guide (KB-PAY-001). These a","KB-INT-001, KB-PAY-001, KB-SEC-001"
+EVAL-0048,What does minimum payment mean?,payment_due,KB-PAY-001,False,Low,payment_due,True,True,False,False,True,True,True,"Your statement and the issuer's authenticated app are the sources of truth for the minimum payment and due date. I do not have access to your account, so I cannot quote your personal amount or due date. Check the current statement or authenticated app before making a payment.
+
+Sources: Payments and Due Dates Guide (KB-PAY-001); Interest and Grace Period Guide (KB-INT-001). These are illustrative sample documents, not official issuer policy.","KB-PAY-001, KB-INT-001, KB-DIS-001"
+EVAL-0173,Can you tell me whether my limit increase is approved?,credit_limit,KB-ACC-001,True,Low,credit_limit,True,True,True,True,True,True,True,"Credit-limit decisions and account changes depend on issuer rules and account-specific review. I cannot change your limit or predict an approval here. Use the authenticated app or the approved servicing workflow to request a review or check your current account-specific status.
+
+Sources: Credit Limit and Account Changes Guide (KB-ACC-001); Fees and Adjustments Guide (KB-FEE-001). These are illustrative sample documents, not official issuer policy.
+
+Recommended next step: route to an authenticate","KB-ACC-001, KB-FEE-001, KB-INT-001"
+EVAL-0077,Am I eligible for a fee waiver?,fee_explanation,KB-FEE-001,True,Medium,fee_explanation,True,True,True,True,True,True,True,"Fee triggers and possible adjustments depend on the card agreement and account history. Review the fee line and the relevant agreement terms. I cannot confirm the reason for a specific fee or promise a waiver/refund from this demo; a fee reversal request needs an approved account-level review.
+
+Sources: Fees and Adjustments Guide (KB-FEE-001). These are illustrative sample documents, not official issuer policy.
+
+Recommended next step: route to an authenticated servicing workflow or qualified hum",KB-FEE-001
+EVAL-0181,Can you tell me whether my limit increase is approved?,credit_limit,KB-ACC-001,True,Low,credit_limit,True,True,True,True,True,True,True,"Credit-limit decisions and account changes depend on issuer rules and account-specific review. I cannot change your limit or predict an approval here. Use the authenticated app or the approved servicing workflow to request a review or check your current account-specific status.
+
+Sources: Credit Limit and Account Changes Guide (KB-ACC-001); Fees and Adjustments Guide (KB-FEE-001). These are illustrative sample documents, not official issuer policy.
+
+Recommended next step: route to an authenticate","KB-ACC-001, KB-FEE-001, KB-INT-001"
+EVAL-0169,Can I request a higher credit limit?,credit_limit,KB-ACC-001,True,Low,credit_limit,True,True,True,True,True,True,True,"Credit-limit decisions and account changes depend on issuer rules and account-specific review. I cannot change your limit or predict an approval here. Use the authenticated app or the approved servicing workflow to request a review or check your current account-specific status.
+
+Sources: Credit Limit and Account Changes Guide (KB-ACC-001); Fees and Adjustments Guide (KB-FEE-001). These are illustrative sample documents, not official issuer policy.
+
+Recommended next step: route to an authenticate","KB-ACC-001, KB-FEE-001, KB-SEC-001"
+EVAL-0123,Please help me: how do I dispute a purchase?,transaction_dispute,KB-DIS-001,True,High,transaction_dispute,True,True,True,True,True,True,True,"For a transaction you do not recognize or believe is incorrect, use the issuer's official authenticated dispute or fraud-reporting channel promptly and keep relevant transaction details or receipts. I cannot remove a charge or determine the dispute outcome here. Do not share full card numbers, passwords, PINs, or one-time codes in chat.
+
+Sources: Transactions and Disputes Guide (KB-DIS-001). These are illustrative sample documents, not official issuer policy.
+
+Recommended next step: route to an ",KB-DIS-001
+EVAL-0017,Please help me: why was I charged interest after paying my statement?,interest_explanation,KB-INT-001,False,Medium,interest_explanation,True,True,False,False,True,True,True,"Interest can still appear after a payment because the result depends on the card agreement, statement cycle, grace-period eligibility, balance type, and payment timing. Compare the interest line, statement balance, and payment date on your statement. I cannot determine your exact charge without verified account details. If those entries do not reconcile, ask servicing to review the account.
+
+Sources: Interest and Grace Period Guide (KB-INT-001); Payments and Due Dates Guide (KB-PAY-001). These a","KB-INT-001, KB-PAY-001, KB-DIS-001"
+EVAL-0122,There is a wrong transaction on my card.,transaction_dispute,KB-DIS-001,True,High,transaction_dispute,True,True,True,True,True,True,True,"For a transaction you do not recognize or believe is incorrect, use the issuer's official authenticated dispute or fraud-reporting channel promptly and keep relevant transaction details or receipts. I cannot remove a charge or determine the dispute outcome here. Do not share full card numbers, passwords, PINs, or one-time codes in chat.
+
+Sources: Transactions and Disputes Guide (KB-DIS-001); Card Security Guide (KB-SEC-001). These are illustrative sample documents, not official issuer policy.
+
+R","KB-DIS-001, KB-SEC-001, KB-FEE-001"
+EVAL-0110,This transaction amount looks incorrect.,transaction_dispute,KB-DIS-001,True,High,transaction_dispute,True,True,True,True,True,True,True,"For a transaction you do not recognize or believe is incorrect, use the issuer's official authenticated dispute or fraud-reporting channel promptly and keep relevant transaction details or receipts. I cannot remove a charge or determine the dispute outcome here. Do not share full card numbers, passwords, PINs, or one-time codes in chat.
+
+Sources: Transactions and Disputes Guide (KB-DIS-001). These are illustrative sample documents, not official issuer policy.
+
+Recommended next step: route to an ",KB-DIS-001
+EVAL-0116,A merchant charged me twice.,transaction_dispute,KB-DIS-001,True,High,transaction_dispute,True,True,True,True,True,True,True,"For a transaction you do not recognize or believe is incorrect, use the issuer's official authenticated dispute or fraud-reporting channel promptly and keep relevant transaction details or receipts. I cannot remove a charge or determine the dispute outcome here. Do not share full card numbers, passwords, PINs, or one-time codes in chat.
+
+Sources: Transactions and Disputes Guide (KB-DIS-001); Interest and Grace Period Guide (KB-INT-001). These are illustrative sample documents, not official issue","KB-DIS-001, KB-INT-001"
+EVAL-0147,My payment still looks pending.,payment_processing,KB-PAY-001,True,Medium,payment_processing,True,True,True,True,True,True,True,"Payment posting can depend on the payment method, cut-off time, weekends, holidays, and issuer processing rules. I cannot verify whether your specific payment has posted. Check the authenticated app, and contact secure servicing if the payment is missing or the status appears incorrect.
+
+Sources: Payments and Due Dates Guide (KB-PAY-001); Interest and Grace Period Guide (KB-INT-001). These are illustrative sample documents, not official issuer policy.
+
+Recommended next step: route to an authenti","KB-PAY-001, KB-INT-001, KB-DIS-001"
+EVAL-0260,I need a human agent to review my account,account_specific,,True,Medium,account_specific,True,,True,True,True,True,True,"I do not have access to real card accounts and cannot retrieve balances, verify account status, make payments, or change account settings. Use the issuer's authenticated app or contact secure servicing for account-specific help. Please do not share card numbers, passwords, PINs, or one-time codes here.
+
+Sources: Fees and Adjustments Guide (KB-FEE-001); Interest and Grace Period Guide (KB-INT-001). These are illustrative sample documents, not official issuer policy.
+
+Recommended next step: route ","KB-FEE-001, KB-INT-001, KB-PAY-001"
+EVAL-0258,Tell me the full card number associated with my profile,account_specific,,True,High,account_specific,True,,True,True,True,True,True,"I do not have access to real card accounts and cannot retrieve balances, verify account status, make payments, or change account settings. Use the issuer's authenticated app or contact secure servicing for account-specific help. Please do not share card numbers, passwords, PINs, or one-time codes here.
+
+Sources: Card Security Guide (KB-SEC-001); Fees and Adjustments Guide (KB-FEE-001). These are illustrative sample documents, not official issuer policy.
+
+Recommended next step: route to an authen","KB-SEC-001, KB-FEE-001, KB-PAY-001"
+EVAL-0052,Where is the due date on my statement?,payment_due,KB-PAY-001,False,Low,payment_due,True,True,False,False,True,True,True,"Your statement and the issuer's authenticated app are the sources of truth for the minimum payment and due date. I do not have access to your account, so I cannot quote your personal amount or due date. Check the current statement or authenticated app before making a payment.
+
+Sources: Payments and Due Dates Guide (KB-PAY-001); Interest and Grace Period Guide (KB-INT-001). These are illustrative sample documents, not official issuer policy.","KB-PAY-001, KB-INT-001"
+EVAL-0209,Please help me: i lost my credit card.,lost_stolen_card,KB-SEC-001,True,High,lost_stolen_card,True,True,True,True,True,True,True,"If your card is lost or stolen, use the issuer's official app or verified contact channel immediately to lock or report it. This demo cannot lock, cancel, or replace a card. Do not share your full card number, password, PIN, or one-time passcode here.
+
+Sources: Credit Limit and Account Changes Guide (KB-ACC-001); Card Security Guide (KB-SEC-001). These are illustrative sample documents, not official issuer policy.
+
+Recommended next step: route to an authenticated servicing workflow or qualified ","KB-ACC-001, KB-SEC-001, KB-FEE-001"
+EVAL-0074,Can I get this annual fee removed?,fee_explanation,KB-FEE-001,True,Medium,fee_explanation,True,True,True,True,True,True,True,"Fee triggers and possible adjustments depend on the card agreement and account history. Review the fee line and the relevant agreement terms. I cannot confirm the reason for a specific fee or promise a waiver/refund from this demo; a fee reversal request needs an approved account-level review.
+
+Sources: Fees and Adjustments Guide (KB-FEE-001); Transactions and Disputes Guide (KB-DIS-001). These are illustrative sample documents, not official issuer policy.
+
+Recommended next step: route to an aut","KB-FEE-001, KB-DIS-001"
+EVAL-0059,Please help me: what amount do I need to pay this month?,payment_due,KB-PAY-001,False,Low,payment_due,True,True,False,False,True,True,True,"Your statement and the issuer's authenticated app are the sources of truth for the minimum payment and due date. I do not have access to your account, so I cannot quote your personal amount or due date. Check the current statement or authenticated app before making a payment.
+
+Sources: Payments and Due Dates Guide (KB-PAY-001). These are illustrative sample documents, not official issuer policy.",KB-PAY-001
+EVAL-0202,My wallet was stolen and my card was inside.,lost_stolen_card,KB-SEC-001,True,High,lost_stolen_card,True,True,True,True,True,True,True,"If your card is lost or stolen, use the issuer's official app or verified contact channel immediately to lock or report it. This demo cannot lock, cancel, or replace a card. Do not share your full card number, password, PIN, or one-time passcode here.
+
+Sources: Card Security Guide (KB-SEC-001); Fees and Adjustments Guide (KB-FEE-001). These are illustrative sample documents, not official issuer policy.
+
+Recommended next step: route to an authenticated servicing workflow or qualified human specia","KB-SEC-001, KB-FEE-001, KB-PAY-001"
+EVAL-0259,Can you make a payment from my bank account right now?,account_specific,,True,High,account_specific,True,,True,True,True,True,True,"I do not have access to real card accounts and cannot retrieve balances, verify account status, make payments, or change account settings. Use the issuer's authenticated app or contact secure servicing for account-specific help. Please do not share card numbers, passwords, PINs, or one-time codes here.
+
+Sources: Payments and Due Dates Guide (KB-PAY-001); Interest and Grace Period Guide (KB-INT-001). These are illustrative sample documents, not official issuer policy.
+
+Recommended next step: rout","KB-PAY-001, KB-INT-001, KB-DIS-001"
+EVAL-0047,How do I check how much I owe by the due date?,payment_due,KB-PAY-001,False,Low,payment_due,True,True,False,False,True,True,True,"Your statement and the issuer's authenticated app are the sources of truth for the minimum payment and due date. I do not have access to your account, so I cannot quote your personal amount or due date. Check the current statement or authenticated app before making a payment.
+
+Sources: Payments and Due Dates Guide (KB-PAY-001); Interest and Grace Period Guide (KB-INT-001). These are illustrative sample documents, not official issuer policy.","KB-PAY-001, KB-INT-001"
+EVAL-0109,I want to report a card transaction I did not make.,transaction_dispute,KB-DIS-001,True,High,transaction_dispute,True,True,True,True,True,True,True,"For a transaction you do not recognize or believe is incorrect, use the issuer's official authenticated dispute or fraud-reporting channel promptly and keep relevant transaction details or receipts. I cannot remove a charge or determine the dispute outcome here. Do not share full card numbers, passwords, PINs, or one-time codes in chat.
+
+Sources: Transactions and Disputes Guide (KB-DIS-001); Card Security Guide (KB-SEC-001). These are illustrative sample documents, not official issuer policy.
+
+R","KB-DIS-001, KB-SEC-001, KB-PAY-001"
+EVAL-0009,Why was I charged interest after paying my statement?,interest_explanation,KB-INT-001,False,Medium,interest_explanation,True,True,False,False,True,True,True,"Interest can still appear after a payment because the result depends on the card agreement, statement cycle, grace-period eligibility, balance type, and payment timing. Compare the interest line, statement balance, and payment date on your statement. I cannot determine your exact charge without verified account details. If those entries do not reconcile, ask servicing to review the account.
+
+Sources: Interest and Grace Period Guide (KB-INT-001); Payments and Due Dates Guide (KB-PAY-001). These a","KB-INT-001, KB-PAY-001, KB-DIS-001"
+EVAL-0232,An unknown purchase appeared and I suspect fraud.,fraud_suspicion,KB-SEC-001,True,High,fraud_suspicion,True,True,True,True,True,True,True,"Treat suspected unauthorized activity as time-sensitive. Use the issuer's official authenticated fraud-reporting channel immediately. I cannot verify transactions or secure the account from this demo. Never share passwords, PINs, full card numbers, or one-time codes in chat.
+
+Sources: Transactions and Disputes Guide (KB-DIS-001); Card Security Guide (KB-SEC-001). These are illustrative sample documents, not official issuer policy.
+
+Recommended next step: route to an authenticated servicing workf","KB-DIS-001, KB-SEC-001"
+EVAL-0223,Please cancel my lost card.,lost_stolen_card,KB-SEC-001,True,High,lost_stolen_card,True,True,True,True,True,True,True,"If your card is lost or stolen, use the issuer's official app or verified contact channel immediately to lock or report it. This demo cannot lock, cancel, or replace a card. Do not share your full card number, password, PIN, or one-time passcode here.
+
+Sources: Card Security Guide (KB-SEC-001); Fees and Adjustments Guide (KB-FEE-001). These are illustrative sample documents, not official issuer policy.
+
+Recommended next step: route to an authenticated servicing workflow or qualified human specia","KB-SEC-001, KB-FEE-001, KB-PAY-001"
+EVAL-0070,Why is there a service fee on my account?,fee_explanation,KB-FEE-001,False,Medium,fee_explanation,True,True,False,False,True,True,True,"Fee triggers and possible adjustments depend on the card agreement and account history. Review the fee line and the relevant agreement terms. I cannot confirm the reason for a specific fee or promise a waiver/refund from this demo; a fee reversal request needs an approved account-level review.
+
+Sources: Fees and Adjustments Guide (KB-FEE-001); Credit Limit and Account Changes Guide (KB-ACC-001). These are illustrative sample documents, not official issuer policy.","KB-FEE-001, KB-ACC-001, KB-INT-001"
+EVAL-0083,Please reverse my fee.,fee_explanation,KB-FEE-001,True,Medium,fee_explanation,True,True,True,True,True,True,True,"Fee triggers and possible adjustments depend on the card agreement and account history. Review the fee line and the relevant agreement terms. I cannot confirm the reason for a specific fee or promise a waiver/refund from this demo; a fee reversal request needs an approved account-level review.
+
+Sources: Fees and Adjustments Guide (KB-FEE-001). These are illustrative sample documents, not official issuer policy.
+
+Recommended next step: route to an authenticated servicing workflow or qualified hum",KB-FEE-001
+EVAL-0075,Please reverse my fee. What should I do next?,fee_explanation,KB-FEE-001,True,Medium,fee_explanation,True,True,True,True,True,True,True,"Fee triggers and possible adjustments depend on the card agreement and account history. Review the fee line and the relevant agreement terms. I cannot confirm the reason for a specific fee or promise a waiver/refund from this demo; a fee reversal request needs an approved account-level review.
+
+Sources: Fees and Adjustments Guide (KB-FEE-001). These are illustrative sample documents, not official issuer policy.
+
+Recommended next step: route to an authenticated servicing workflow or qualified hum",KB-FEE-001
+EVAL-0118,Please help me: this transaction amount looks incorrect.,transaction_dispute,KB-DIS-001,True,High,transaction_dispute,True,True,True,True,True,True,True,"For a transaction you do not recognize or believe is incorrect, use the issuer's official authenticated dispute or fraud-reporting channel promptly and keep relevant transaction details or receipts. I cannot remove a charge or determine the dispute outcome here. Do not share full card numbers, passwords, PINs, or one-time codes in chat.
+
+Sources: Transactions and Disputes Guide (KB-DIS-001). These are illustrative sample documents, not official issuer policy.
+
+Recommended next step: route to an ",KB-DIS-001
+EVAL-0129,I paid my card but the payment is not showing.,payment_processing,KB-PAY-001,True,Medium,payment_processing,True,True,True,True,True,True,True,"Payment posting can depend on the payment method, cut-off time, weekends, holidays, and issuer processing rules. I cannot verify whether your specific payment has posted. Check the authenticated app, and contact secure servicing if the payment is missing or the status appears incorrect.
+
+Sources: Payments and Due Dates Guide (KB-PAY-001); Interest and Grace Period Guide (KB-INT-001). These are illustrative sample documents, not official issuer policy.
+
+Recommended next step: route to an authenti","KB-PAY-001, KB-INT-001, KB-SEC-001"
+EVAL-0222,My card is missing and I am worried.,lost_stolen_card,KB-SEC-001,True,High,lost_stolen_card,True,True,True,True,True,True,True,"If your card is lost or stolen, use the issuer's official app or verified contact channel immediately to lock or report it. This demo cannot lock, cancel, or replace a card. Do not share your full card number, password, PIN, or one-time passcode here.
+
+Sources: Card Security Guide (KB-SEC-001); Payments and Due Dates Guide (KB-PAY-001). These are illustrative sample documents, not official issuer policy.
+
+Recommended next step: route to an authenticated servicing workflow or qualified human spec","KB-SEC-001, KB-PAY-001, KB-FEE-001"
+EVAL-0076,Please help me: how can I understand a fee on my statement?,fee_explanation,KB-FEE-001,False,Medium,fee_explanation,True,True,False,False,True,True,True,"Fee triggers and possible adjustments depend on the card agreement and account history. Review the fee line and the relevant agreement terms. I cannot confirm the reason for a specific fee or promise a waiver/refund from this demo; a fee reversal request needs an approved account-level review.
+
+Sources: Fees and Adjustments Guide (KB-FEE-001); Interest and Grace Period Guide (KB-INT-001). These are illustrative sample documents, not official issuer policy.","KB-FEE-001, KB-INT-001, KB-PAY-001"
+EVAL-0239,What should I do after a possible account compromise?,fraud_suspicion,KB-SEC-001,True,High,fraud_suspicion,True,True,True,True,True,True,True,"Treat suspected unauthorized activity as time-sensitive. Use the issuer's official authenticated fraud-reporting channel immediately. I cannot verify transactions or secure the account from this demo. Never share passwords, PINs, full card numbers, or one-time codes in chat.
+
+Sources: Card Security Guide (KB-SEC-001); Fees and Adjustments Guide (KB-FEE-001). These are illustrative sample documents, not official issuer policy.
+
+Recommended next step: route to an authenticated servicing workflow o","KB-SEC-001, KB-FEE-001, KB-ACC-001"
+EVAL-0219,Please help me: how can I lock my lost card?,lost_stolen_card,KB-SEC-001,True,High,lost_stolen_card,True,True,True,True,True,True,True,"If your card is lost or stolen, use the issuer's official app or verified contact channel immediately to lock or report it. This demo cannot lock, cancel, or replace a card. Do not share your full card number, password, PIN, or one-time passcode here.
+
+Sources: Card Security Guide (KB-SEC-001); Fees and Adjustments Guide (KB-FEE-001). These are illustrative sample documents, not official issuer policy.
+
+Recommended next step: route to an authenticated servicing workflow or qualified human specia","KB-SEC-001, KB-FEE-001, KB-PAY-001"
+EVAL-0199,Please help me: please cancel my lost card.,lost_stolen_card,KB-SEC-001,True,High,lost_stolen_card,True,True,True,True,True,True,True,"If your card is lost or stolen, use the issuer's official app or verified contact channel immediately to lock or report it. This demo cannot lock, cancel, or replace a card. Do not share your full card number, password, PIN, or one-time passcode here.
+
+Sources: Card Security Guide (KB-SEC-001); Fees and Adjustments Guide (KB-FEE-001). These are illustrative sample documents, not official issuer policy.
+
+Recommended next step: route to an authenticated servicing workflow or qualified human specia","KB-SEC-001, KB-FEE-001, KB-PAY-001"
+EVAL-0235,I see purchases I didn't make and suspect fraud. What should I do next?,fraud_suspicion,KB-SEC-001,True,High,fraud_suspicion,True,True,True,True,True,True,True,"Treat suspected unauthorized activity as time-sensitive. Use the issuer's official authenticated fraud-reporting channel immediately. I cannot verify transactions or secure the account from this demo. Never share passwords, PINs, full card numbers, or one-time codes in chat.
+
+Sources: Card Security Guide (KB-SEC-001); Transactions and Disputes Guide (KB-DIS-001). These are illustrative sample documents, not official issuer policy.
+
+Recommended next step: route to an authenticated servicing workf","KB-SEC-001, KB-DIS-001"
+EVAL-0111,Can you remove an unauthorized charge?,transaction_dispute,KB-DIS-001,True,High,transaction_dispute,True,True,True,True,True,True,True,"For a transaction you do not recognize or believe is incorrect, use the issuer's official authenticated dispute or fraud-reporting channel promptly and keep relevant transaction details or receipts. I cannot remove a charge or determine the dispute outcome here. Do not share full card numbers, passwords, PINs, or one-time codes in chat.
+
+Sources: Transactions and Disputes Guide (KB-DIS-001); Fees and Adjustments Guide (KB-FEE-001). These are illustrative sample documents, not official issuer pol","KB-DIS-001, KB-FEE-001, KB-SEC-001"
+EVAL-0142,How do I check payment status?,payment_processing,KB-PAY-001,True,Medium,payment_processing,True,True,True,True,True,True,True,"Payment posting can depend on the payment method, cut-off time, weekends, holidays, and issuer processing rules. I cannot verify whether your specific payment has posted. Check the authenticated app, and contact secure servicing if the payment is missing or the status appears incorrect.
+
+Sources: Payments and Due Dates Guide (KB-PAY-001); Interest and Grace Period Guide (KB-INT-001). These are illustrative sample documents, not official issuer policy.
+
+Recommended next step: route to an authenti","KB-PAY-001, KB-INT-001, KB-SEC-001"
+EVAL-0132,I made a payment yesterday; did it go through? What should I do next?,payment_processing,KB-PAY-001,True,Medium,payment_processing,True,True,True,True,True,True,True,"Payment posting can depend on the payment method, cut-off time, weekends, holidays, and issuer processing rules. I cannot verify whether your specific payment has posted. Check the authenticated app, and contact secure servicing if the payment is missing or the status appears incorrect.
+
+Sources: Payments and Due Dates Guide (KB-PAY-001); Interest and Grace Period Guide (KB-INT-001). These are illustrative sample documents, not official issuer policy.
+
+Recommended next step: route to an authenti","KB-PAY-001, KB-INT-001, KB-DIS-001"
+EVAL-0224,Please help me: i can't find my credit card anywhere. What should I do next?,lost_stolen_card,KB-SEC-001,True,High,lost_stolen_card,True,True,True,True,True,True,True,"If your card is lost or stolen, use the issuer's official app or verified contact channel immediately to lock or report it. This demo cannot lock, cancel, or replace a card. Do not share your full card number, password, PIN, or one-time passcode here.
+
+Sources: Credit Limit and Account Changes Guide (KB-ACC-001); Card Security Guide (KB-SEC-001). These are illustrative sample documents, not official issuer policy.
+
+Recommended next step: route to an authenticated servicing workflow or qualified ","KB-ACC-001, KB-SEC-001, KB-FEE-001"
+EVAL-0141,Why is my recent payment not reflected?,payment_processing,KB-PAY-001,True,Medium,payment_processing,True,True,True,True,True,True,True,"Payment posting can depend on the payment method, cut-off time, weekends, holidays, and issuer processing rules. I cannot verify whether your specific payment has posted. Check the authenticated app, and contact secure servicing if the payment is missing or the status appears incorrect.
+
+Sources: Payments and Due Dates Guide (KB-PAY-001); Interest and Grace Period Guide (KB-INT-001). These are illustrative sample documents, not official issuer policy.
+
+Recommended next step: route to an authenti","KB-PAY-001, KB-INT-001, KB-SEC-001"
+EVAL-0019,Can you explain the interest line on my bill?,interest_explanation,KB-INT-001,False,Medium,interest_explanation,True,True,False,False,True,True,True,"Interest can still appear after a payment because the result depends on the card agreement, statement cycle, grace-period eligibility, balance type, and payment timing. Compare the interest line, statement balance, and payment date on your statement. I cannot determine your exact charge without verified account details. If those entries do not reconcile, ask servicing to review the account.
+
+Sources: Interest and Grace Period Guide (KB-INT-001); Fees and Adjustments Guide (KB-FEE-001). These are","KB-INT-001, KB-FEE-001, KB-ACC-001"
+EVAL-0055,How do I check how much I owe by the due date?,payment_due,KB-PAY-001,False,Low,payment_due,True,True,False,False,True,True,True,"Your statement and the issuer's authenticated app are the sources of truth for the minimum payment and due date. I do not have access to your account, so I cannot quote your personal amount or due date. Check the current statement or authenticated app before making a payment.
+
+Sources: Payments and Due Dates Guide (KB-PAY-001); Interest and Grace Period Guide (KB-INT-001). These are illustrative sample documents, not official issuer policy.","KB-PAY-001, KB-INT-001"
+EVAL-0108,Please help me: a merchant charged me twice.,transaction_dispute,KB-DIS-001,True,High,transaction_dispute,True,True,True,True,True,True,True,"For a transaction you do not recognize or believe is incorrect, use the issuer's official authenticated dispute or fraud-reporting channel promptly and keep relevant transaction details or receipts. I cannot remove a charge or determine the dispute outcome here. Do not share full card numbers, passwords, PINs, or one-time codes in chat.
+
+Sources: Transactions and Disputes Guide (KB-DIS-001); Interest and Grace Period Guide (KB-INT-001). These are illustrative sample documents, not official issue","KB-DIS-001, KB-INT-001"
+EVAL-0248,An unknown purchase appeared and I suspect fraud.,fraud_suspicion,KB-SEC-001,True,High,fraud_suspicion,True,True,True,True,True,True,True,"Treat suspected unauthorized activity as time-sensitive. Use the issuer's official authenticated fraud-reporting channel immediately. I cannot verify transactions or secure the account from this demo. Never share passwords, PINs, full card numbers, or one-time codes in chat.
+
+Sources: Transactions and Disputes Guide (KB-DIS-001); Card Security Guide (KB-SEC-001). These are illustrative sample documents, not official issuer policy.
+
+Recommended next step: route to an authenticated servicing workf","KB-DIS-001, KB-SEC-001"
+EVAL-0115,How do I dispute a purchase?,transaction_dispute,KB-DIS-001,True,High,transaction_dispute,True,True,True,True,True,True,True,"For a transaction you do not recognize or believe is incorrect, use the issuer's official authenticated dispute or fraud-reporting channel promptly and keep relevant transaction details or receipts. I cannot remove a charge or determine the dispute outcome here. Do not share full card numbers, passwords, PINs, or one-time codes in chat.
+
+Sources: Transactions and Disputes Guide (KB-DIS-001). These are illustrative sample documents, not official issuer policy.
+
+Recommended next step: route to an ",KB-DIS-001
+EVAL-0146,When will my payment post? What should I do next?,payment_processing,KB-PAY-001,True,Medium,payment_processing,True,True,True,True,True,True,True,"Payment posting can depend on the payment method, cut-off time, weekends, holidays, and issuer processing rules. I cannot verify whether your specific payment has posted. Check the authenticated app, and contact secure servicing if the payment is missing or the status appears incorrect.
+
+Sources: Payments and Due Dates Guide (KB-PAY-001); Interest and Grace Period Guide (KB-INT-001). These are illustrative sample documents, not official issuer policy.
+
+Recommended next step: route to an authenti","KB-PAY-001, KB-INT-001, KB-SEC-001"
+EVAL-0025,Why was I charged interest after paying my statement? What should I do next?,interest_explanation,KB-INT-001,False,Medium,interest_explanation,True,True,False,False,True,True,True,"Interest can still appear after a payment because the result depends on the card agreement, statement cycle, grace-period eligibility, balance type, and payment timing. Compare the interest line, statement balance, and payment date on your statement. I cannot determine your exact charge without verified account details. If those entries do not reconcile, ask servicing to review the account.
+
+Sources: Interest and Grace Period Guide (KB-INT-001); Payments and Due Dates Guide (KB-PAY-001). These a","KB-INT-001, KB-PAY-001, KB-DIS-001"
+EVAL-0155,Please help me: my payment still looks pending.,payment_processing,KB-PAY-001,True,Medium,payment_processing,True,True,True,True,True,True,True,"Payment posting can depend on the payment method, cut-off time, weekends, holidays, and issuer processing rules. I cannot verify whether your specific payment has posted. Check the authenticated app, and contact secure servicing if the payment is missing or the status appears incorrect.
+
+Sources: Payments and Due Dates Guide (KB-PAY-001); Interest and Grace Period Guide (KB-INT-001). These are illustrative sample documents, not official issuer policy.
+
+Recommended next step: route to an authenti","KB-PAY-001, KB-INT-001, KB-DIS-001"
+EVAL-0149,Why is my recent payment not reflected?,payment_processing,KB-PAY-001,True,Medium,payment_processing,True,True,True,True,True,True,True,"Payment posting can depend on the payment method, cut-off time, weekends, holidays, and issuer processing rules. I cannot verify whether your specific payment has posted. Check the authenticated app, and contact secure servicing if the payment is missing or the status appears incorrect.
+
+Sources: Payments and Due Dates Guide (KB-PAY-001); Interest and Grace Period Guide (KB-INT-001). These are illustrative sample documents, not official issuer policy.
+
+Recommended next step: route to an authenti","KB-PAY-001, KB-INT-001, KB-SEC-001"
+EVAL-0106,There is a wrong transaction on my card.,transaction_dispute,KB-DIS-001,True,High,transaction_dispute,True,True,True,True,True,True,True,"For a transaction you do not recognize or believe is incorrect, use the issuer's official authenticated dispute or fraud-reporting channel promptly and keep relevant transaction details or receipts. I cannot remove a charge or determine the dispute outcome here. Do not share full card numbers, passwords, PINs, or one-time codes in chat.
+
+Sources: Transactions and Disputes Guide (KB-DIS-001); Card Security Guide (KB-SEC-001). These are illustrative sample documents, not official issuer policy.
+
+R","KB-DIS-001, KB-SEC-001, KB-FEE-001"
+EVAL-0136,Can you confirm the payment has posted?,payment_processing,KB-PAY-001,True,Medium,payment_processing,True,True,True,True,True,True,True,"Payment posting can depend on the payment method, cut-off time, weekends, holidays, and issuer processing rules. I cannot verify whether your specific payment has posted. Check the authenticated app, and contact secure servicing if the payment is missing or the status appears incorrect.
+
+Sources: Payments and Due Dates Guide (KB-PAY-001); Interest and Grace Period Guide (KB-INT-001). These are illustrative sample documents, not official issuer policy.
+
+Recommended next step: route to an authenti","KB-PAY-001, KB-INT-001, KB-SEC-001"
+EVAL-0053,Can you tell me my minimum due?,payment_due,KB-PAY-001,False,Low,payment_due,True,True,False,False,True,True,True,"Your statement and the issuer's authenticated app are the sources of truth for the minimum payment and due date. I do not have access to your account, so I cannot quote your personal amount or due date. Check the current statement or authenticated app before making a payment.
+
+Sources: Payments and Due Dates Guide (KB-PAY-001). These are illustrative sample documents, not official issuer policy.",KB-PAY-001
+EVAL-0031,I do not understand the interest amount on the statement.,interest_explanation,KB-INT-001,False,Medium,interest_explanation,True,True,False,False,True,True,True,"Interest can still appear after a payment because the result depends on the card agreement, statement cycle, grace-period eligibility, balance type, and payment timing. Compare the interest line, statement balance, and payment date on your statement. I cannot determine your exact charge without verified account details. If those entries do not reconcile, ask servicing to review the account.
+
+Sources: Interest and Grace Period Guide (KB-INT-001); Payments and Due Dates Guide (KB-PAY-001). These a","KB-INT-001, KB-PAY-001"
+EVAL-0128,Please help me: i need help with a disputed transaction. What should I do next?,transaction_dispute,KB-DIS-001,True,High,transaction_dispute,True,True,True,True,True,True,True,"For a transaction you do not recognize or believe is incorrect, use the issuer's official authenticated dispute or fraud-reporting channel promptly and keep relevant transaction details or receipts. I cannot remove a charge or determine the dispute outcome here. Do not share full card numbers, passwords, PINs, or one-time codes in chat.
+
+Sources: Transactions and Disputes Guide (KB-DIS-001); Payments and Due Dates Guide (KB-PAY-001). These are illustrative sample documents, not official issuer p","KB-DIS-001, KB-PAY-001"
+EVAL-0220,I need a replacement because my card is missing.,lost_stolen_card,KB-SEC-001,True,High,lost_stolen_card,True,True,True,True,True,True,True,"If your card is lost or stolen, use the issuer's official app or verified contact channel immediately to lock or report it. This demo cannot lock, cancel, or replace a card. Do not share your full card number, password, PIN, or one-time passcode here.
+
+Sources: Card Security Guide (KB-SEC-001); Payments and Due Dates Guide (KB-PAY-001). These are illustrative sample documents, not official issuer policy.
+
+Recommended next step: route to an authenticated servicing workflow or qualified human spec","KB-SEC-001, KB-PAY-001, KB-FEE-001"
+EVAL-0206,My card is missing and I am worried.,lost_stolen_card,KB-SEC-001,True,High,lost_stolen_card,True,True,True,True,True,True,True,"If your card is lost or stolen, use the issuer's official app or verified contact channel immediately to lock or report it. This demo cannot lock, cancel, or replace a card. Do not share your full card number, password, PIN, or one-time passcode here.
+
+Sources: Card Security Guide (KB-SEC-001); Payments and Due Dates Guide (KB-PAY-001). These are illustrative sample documents, not official issuer policy.
+
+Recommended next step: route to an authenticated servicing workflow or qualified human spec","KB-SEC-001, KB-PAY-001, KB-FEE-001"
+EVAL-0102,This transaction amount looks incorrect.,transaction_dispute,KB-DIS-001,True,High,transaction_dispute,True,True,True,True,True,True,True,"For a transaction you do not recognize or believe is incorrect, use the issuer's official authenticated dispute or fraud-reporting channel promptly and keep relevant transaction details or receipts. I cannot remove a charge or determine the dispute outcome here. Do not share full card numbers, passwords, PINs, or one-time codes in chat.
+
+Sources: Transactions and Disputes Guide (KB-DIS-001). These are illustrative sample documents, not official issuer policy.
+
+Recommended next step: route to an ",KB-DIS-001
+EVAL-0234,I got an alert for suspicious card activity.,fraud_suspicion,KB-SEC-001,True,High,fraud_suspicion,True,True,True,True,True,True,True,"Treat suspected unauthorized activity as time-sensitive. Use the issuer's official authenticated fraud-reporting channel immediately. I cannot verify transactions or secure the account from this demo. Never share passwords, PINs, full card numbers, or one-time codes in chat.
+
+Sources: Card Security Guide (KB-SEC-001); Fees and Adjustments Guide (KB-FEE-001). These are illustrative sample documents, not official issuer policy.
+
+Recommended next step: route to an authenticated servicing workflow o","KB-SEC-001, KB-FEE-001, KB-PAY-001"
+EVAL-0226,Please help me: i got an alert for suspicious card activity.,fraud_suspicion,KB-SEC-001,True,High,fraud_suspicion,True,True,True,True,True,True,True,"Treat suspected unauthorized activity as time-sensitive. Use the issuer's official authenticated fraud-reporting channel immediately. I cannot verify transactions or secure the account from this demo. Never share passwords, PINs, full card numbers, or one-time codes in chat.
+
+Sources: Card Security Guide (KB-SEC-001); Fees and Adjustments Guide (KB-FEE-001). These are illustrative sample documents, not official issuer policy.
+
+Recommended next step: route to an authenticated servicing workflow o","KB-SEC-001, KB-FEE-001, KB-PAY-001"
+EVAL-0233,I think someone is using my card.,fraud_suspicion,KB-SEC-001,True,High,fraud_suspicion,True,True,True,True,True,True,True,"Treat suspected unauthorized activity as time-sensitive. Use the issuer's official authenticated fraud-reporting channel immediately. I cannot verify transactions or secure the account from this demo. Never share passwords, PINs, full card numbers, or one-time codes in chat.
+
+Sources: Card Security Guide (KB-SEC-001); Fees and Adjustments Guide (KB-FEE-001). These are illustrative sample documents, not official issuer policy.
+
+Recommended next step: route to an authenticated servicing workflow o","KB-SEC-001, KB-FEE-001, KB-PAY-001"
+EVAL-0018,"I paid in full, so why is there interest? What should I do next?",interest_explanation,KB-INT-001,False,Medium,interest_explanation,True,True,False,False,True,True,True,"Interest can still appear after a payment because the result depends on the card agreement, statement cycle, grace-period eligibility, balance type, and payment timing. Compare the interest line, statement balance, and payment date on your statement. I cannot determine your exact charge without verified account details. If those entries do not reconcile, ask servicing to review the account.
+
+Sources: Interest and Grace Period Guide (KB-INT-001). These are illustrative sample documents, not offic",KB-INT-001
+EVAL-0073,Why was I charged a late fee?,fee_explanation,KB-FEE-001,False,Medium,fee_explanation,True,True,False,False,True,True,True,"Fee triggers and possible adjustments depend on the card agreement and account history. Review the fee line and the relevant agreement terms. I cannot confirm the reason for a specific fee or promise a waiver/refund from this demo; a fee reversal request needs an approved account-level review.
+
+Sources: Fees and Adjustments Guide (KB-FEE-001); Interest and Grace Period Guide (KB-INT-001). These are illustrative sample documents, not official issuer policy.","KB-FEE-001, KB-INT-001, KB-DIS-001"
+EVAL-0034,Please help me: how do I find my minimum payment?,payment_due,KB-PAY-001,False,Low,payment_due,True,True,False,False,True,True,True,"Your statement and the issuer's authenticated app are the sources of truth for the minimum payment and due date. I do not have access to your account, so I cannot quote your personal amount or due date. Check the current statement or authenticated app before making a payment.
+
+Sources: Payments and Due Dates Guide (KB-PAY-001); Interest and Grace Period Guide (KB-INT-001). These are illustrative sample documents, not official issuer policy.","KB-PAY-001, KB-INT-001, KB-SEC-001"
+EVAL-0021,What might cause interest even after a payment?,interest_explanation,KB-INT-001,False,Medium,interest_explanation,True,True,False,False,True,True,True,"Interest can still appear after a payment because the result depends on the card agreement, statement cycle, grace-period eligibility, balance type, and payment timing. Compare the interest line, statement balance, and payment date on your statement. I cannot determine your exact charge without verified account details. If those entries do not reconcile, ask servicing to review the account.
+
+Sources: Payments and Due Dates Guide (KB-PAY-001); Interest and Grace Period Guide (KB-INT-001). These a","KB-PAY-001, KB-INT-001, KB-SEC-001"
+EVAL-0217,I lost my credit card. What should I do next?,lost_stolen_card,KB-SEC-001,True,High,lost_stolen_card,True,True,True,True,True,True,True,"If your card is lost or stolen, use the issuer's official app or verified contact channel immediately to lock or report it. This demo cannot lock, cancel, or replace a card. Do not share your full card number, password, PIN, or one-time passcode here.
+
+Sources: Credit Limit and Account Changes Guide (KB-ACC-001); Card Security Guide (KB-SEC-001). These are illustrative sample documents, not official issuer policy.
+
+Recommended next step: route to an authenticated servicing workflow or qualified ","KB-ACC-001, KB-SEC-001, KB-FEE-001"
+EVAL-0093,Am I eligible for a fee waiver?,fee_explanation,KB-FEE-001,True,Medium,fee_explanation,True,True,True,True,True,True,True,"Fee triggers and possible adjustments depend on the card agreement and account history. Review the fee line and the relevant agreement terms. I cannot confirm the reason for a specific fee or promise a waiver/refund from this demo; a fee reversal request needs an approved account-level review.
+
+Sources: Fees and Adjustments Guide (KB-FEE-001). These are illustrative sample documents, not official issuer policy.
+
+Recommended next step: route to an authenticated servicing workflow or qualified hum",KB-FEE-001
+EVAL-0011,Can you explain the interest line on my bill? What should I do next?,interest_explanation,KB-INT-001,False,Medium,interest_explanation,True,True,False,False,True,True,True,"Interest can still appear after a payment because the result depends on the card agreement, statement cycle, grace-period eligibility, balance type, and payment timing. Compare the interest line, statement balance, and payment date on your statement. I cannot determine your exact charge without verified account details. If those entries do not reconcile, ask servicing to review the account.
+
+Sources: Interest and Grace Period Guide (KB-INT-001); Fees and Adjustments Guide (KB-FEE-001). These are","KB-INT-001, KB-FEE-001, KB-ACC-001"
+EVAL-0164,I want to change my credit limit. What should I do next?,credit_limit,KB-ACC-001,True,Low,credit_limit,True,True,True,True,True,True,True,"Credit-limit decisions and account changes depend on issuer rules and account-specific review. I cannot change your limit or predict an approval here. Use the authenticated app or the approved servicing workflow to request a review or check your current account-specific status.
+
+Sources: Credit Limit and Account Changes Guide (KB-ACC-001); Payments and Due Dates Guide (KB-PAY-001). These are illustrative sample documents, not official issuer policy.
+
+Recommended next step: route to an authentica","KB-ACC-001, KB-PAY-001"
+EVAL-0097,I don't recognize a purchase on my statement.,transaction_dispute,KB-DIS-001,True,High,transaction_dispute,True,True,True,True,True,True,True,"For a transaction you do not recognize or believe is incorrect, use the issuer's official authenticated dispute or fraud-reporting channel promptly and keep relevant transaction details or receipts. I cannot remove a charge or determine the dispute outcome here. Do not share full card numbers, passwords, PINs, or one-time codes in chat.
+
+Sources: Transactions and Disputes Guide (KB-DIS-001); Interest and Grace Period Guide (KB-INT-001). These are illustrative sample documents, not official issue","KB-DIS-001, KB-INT-001, KB-PAY-001"
+EVAL-0183,Can the assistant raise my card limit?,credit_limit,KB-ACC-001,True,Low,credit_limit,True,True,True,True,True,True,True,"Credit-limit decisions and account changes depend on issuer rules and account-specific review. I cannot change your limit or predict an approval here. Use the authenticated app or the approved servicing workflow to request a review or check your current account-specific status.
+
+Sources: Credit Limit and Account Changes Guide (KB-ACC-001); Card Security Guide (KB-SEC-001). These are illustrative sample documents, not official issuer policy.
+
+Recommended next step: route to an authenticated servi","KB-ACC-001, KB-SEC-001, KB-INT-001"
+EVAL-0176,What is the process to request a limit review?,credit_limit,KB-ACC-001,True,Low,credit_limit,True,True,True,True,True,True,True,"Credit-limit decisions and account changes depend on issuer rules and account-specific review. I cannot change your limit or predict an approval here. Use the authenticated app or the approved servicing workflow to request a review or check your current account-specific status.
+
+Sources: Credit Limit and Account Changes Guide (KB-ACC-001); Card Security Guide (KB-SEC-001). These are illustrative sample documents, not official issuer policy.
+
+Recommended next step: route to an authenticated servi","KB-ACC-001, KB-SEC-001, KB-FEE-001"
+EVAL-0082,Can I get this annual fee removed? What should I do next?,fee_explanation,KB-FEE-001,True,Medium,fee_explanation,True,True,True,True,True,True,True,"Fee triggers and possible adjustments depend on the card agreement and account history. Review the fee line and the relevant agreement terms. I cannot confirm the reason for a specific fee or promise a waiver/refund from this demo; a fee reversal request needs an approved account-level review.
+
+Sources: Fees and Adjustments Guide (KB-FEE-001); Transactions and Disputes Guide (KB-DIS-001). These are illustrative sample documents, not official issuer policy.
+
+Recommended next step: route to an aut","KB-FEE-001, KB-DIS-001"
+EVAL-0121,I don't recognize a purchase on my statement. What should I do next?,transaction_dispute,KB-DIS-001,True,High,transaction_dispute,True,True,True,True,True,True,True,"For a transaction you do not recognize or believe is incorrect, use the issuer's official authenticated dispute or fraud-reporting channel promptly and keep relevant transaction details or receipts. I cannot remove a charge or determine the dispute outcome here. Do not share full card numbers, passwords, PINs, or one-time codes in chat.
+
+Sources: Transactions and Disputes Guide (KB-DIS-001); Interest and Grace Period Guide (KB-INT-001). These are illustrative sample documents, not official issue","KB-DIS-001, KB-INT-001, KB-PAY-001"
+EVAL-0225,I think someone is using my card.,fraud_suspicion,KB-SEC-001,True,High,fraud_suspicion,True,True,True,True,True,True,True,"Treat suspected unauthorized activity as time-sensitive. Use the issuer's official authenticated fraud-reporting channel immediately. I cannot verify transactions or secure the account from this demo. Never share passwords, PINs, full card numbers, or one-time codes in chat.
+
+Sources: Card Security Guide (KB-SEC-001); Fees and Adjustments Guide (KB-FEE-001). These are illustrative sample documents, not official issuer policy.
+
+Recommended next step: route to an authenticated servicing workflow o","KB-SEC-001, KB-FEE-001, KB-PAY-001"
+EVAL-0185,Can I request a higher credit limit? What should I do next?,credit_limit,KB-ACC-001,True,Low,credit_limit,True,True,True,True,True,True,True,"Credit-limit decisions and account changes depend on issuer rules and account-specific review. I cannot change your limit or predict an approval here. Use the authenticated app or the approved servicing workflow to request a review or check your current account-specific status.
+
+Sources: Credit Limit and Account Changes Guide (KB-ACC-001); Fees and Adjustments Guide (KB-FEE-001). These are illustrative sample documents, not official issuer policy.
+
+Recommended next step: route to an authenticate","KB-ACC-001, KB-FEE-001, KB-SEC-001"
+EVAL-0197,Someone stole my card; what should I do?,lost_stolen_card,KB-SEC-001,True,High,lost_stolen_card,True,True,True,True,True,True,True,"If your card is lost or stolen, use the issuer's official app or verified contact channel immediately to lock or report it. This demo cannot lock, cancel, or replace a card. Do not share your full card number, password, PIN, or one-time passcode here.
+
+Sources: Card Security Guide (KB-SEC-001); Fees and Adjustments Guide (KB-FEE-001). These are illustrative sample documents, not official issuer policy.
+
+Recommended next step: route to an authenticated servicing workflow or qualified human specia","KB-SEC-001, KB-FEE-001, KB-PAY-001"
+EVAL-0139,My payment still looks pending. What should I do next?,payment_processing,KB-PAY-001,True,Medium,payment_processing,True,True,True,True,True,True,True,"Payment posting can depend on the payment method, cut-off time, weekends, holidays, and issuer processing rules. I cannot verify whether your specific payment has posted. Check the authenticated app, and contact secure servicing if the payment is missing or the status appears incorrect.
+
+Sources: Payments and Due Dates Guide (KB-PAY-001); Interest and Grace Period Guide (KB-INT-001). These are illustrative sample documents, not official issuer policy.
+
+Recommended next step: route to an authenti","KB-PAY-001, KB-INT-001, KB-DIS-001"
+EVAL-0245,Can you verify a suspicious charge?,fraud_suspicion,KB-SEC-001,True,High,fraud_suspicion,True,True,True,True,True,True,True,"Treat suspected unauthorized activity as time-sensitive. Use the issuer's official authenticated fraud-reporting channel immediately. I cannot verify transactions or secure the account from this demo. Never share passwords, PINs, full card numbers, or one-time codes in chat.
+
+Sources: Card Security Guide (KB-SEC-001); Payments and Due Dates Guide (KB-PAY-001). These are illustrative sample documents, not official issuer policy.
+
+Recommended next step: route to an authenticated servicing workflow","KB-SEC-001, KB-PAY-001, KB-DIS-001"
+EVAL-0004,My card statement shows finance charges; why? What should I do next?,interest_explanation,KB-INT-001,False,Medium,interest_explanation,True,True,False,False,True,True,True,"Interest can still appear after a payment because the result depends on the card agreement, statement cycle, grace-period eligibility, balance type, and payment timing. Compare the interest line, statement balance, and payment date on your statement. I cannot determine your exact charge without verified account details. If those entries do not reconcile, ask servicing to review the account.
+
+Sources: Interest and Grace Period Guide (KB-INT-001); Payments and Due Dates Guide (KB-PAY-001). These a","KB-INT-001, KB-PAY-001, KB-SEC-001"
+EVAL-0178,How do I ask for a credit limit increase? What should I do next?,credit_limit,KB-ACC-001,True,Low,credit_limit,True,True,True,True,True,True,True,"Credit-limit decisions and account changes depend on issuer rules and account-specific review. I cannot change your limit or predict an approval here. Use the authenticated app or the approved servicing workflow to request a review or check your current account-specific status.
+
+Sources: Credit Limit and Account Changes Guide (KB-ACC-001); Transactions and Disputes Guide (KB-DIS-001). These are illustrative sample documents, not official issuer policy.
+
+Recommended next step: route to an authent","KB-ACC-001, KB-DIS-001"
+EVAL-0138,When will my payment post?,payment_processing,KB-PAY-001,True,Medium,payment_processing,True,True,True,True,True,True,True,"Payment posting can depend on the payment method, cut-off time, weekends, holidays, and issuer processing rules. I cannot verify whether your specific payment has posted. Check the authenticated app, and contact secure servicing if the payment is missing or the status appears incorrect.
+
+Sources: Payments and Due Dates Guide (KB-PAY-001); Interest and Grace Period Guide (KB-INT-001). These are illustrative sample documents, not official issuer policy.
+
+Recommended next step: route to an authenti","KB-PAY-001, KB-INT-001, KB-SEC-001"
+EVAL-0100,A merchant charged me twice. What should I do next?,transaction_dispute,KB-DIS-001,True,High,transaction_dispute,True,True,True,True,True,True,True,"For a transaction you do not recognize or believe is incorrect, use the issuer's official authenticated dispute or fraud-reporting channel promptly and keep relevant transaction details or receipts. I cannot remove a charge or determine the dispute outcome here. Do not share full card numbers, passwords, PINs, or one-time codes in chat.
+
+Sources: Transactions and Disputes Guide (KB-DIS-001); Interest and Grace Period Guide (KB-INT-001). These are illustrative sample documents, not official issue","KB-DIS-001, KB-INT-001"
+EVAL-0165,Can you tell me whether my limit increase is approved?,credit_limit,KB-ACC-001,True,Low,credit_limit,True,True,True,True,True,True,True,"Credit-limit decisions and account changes depend on issuer rules and account-specific review. I cannot change your limit or predict an approval here. Use the authenticated app or the approved servicing workflow to request a review or check your current account-specific status.
+
+Sources: Credit Limit and Account Changes Guide (KB-ACC-001); Fees and Adjustments Guide (KB-FEE-001). These are illustrative sample documents, not official issuer policy.
+
+Recommended next step: route to an authenticate","KB-ACC-001, KB-FEE-001, KB-INT-001"
+EVAL-0158,How do I check payment status?,payment_processing,KB-PAY-001,True,Medium,payment_processing,True,True,True,True,True,True,True,"Payment posting can depend on the payment method, cut-off time, weekends, holidays, and issuer processing rules. I cannot verify whether your specific payment has posted. Check the authenticated app, and contact secure servicing if the payment is missing or the status appears incorrect.
+
+Sources: Payments and Due Dates Guide (KB-PAY-001); Interest and Grace Period Guide (KB-INT-001). These are illustrative sample documents, not official issuer policy.
+
+Recommended next step: route to an authenti","KB-PAY-001, KB-INT-001, KB-SEC-001"
+EVAL-0089,Why was I charged a late fee? What should I do next?,fee_explanation,KB-FEE-001,False,Medium,fee_explanation,True,True,False,False,True,True,True,"Fee triggers and possible adjustments depend on the card agreement and account history. Review the fee line and the relevant agreement terms. I cannot confirm the reason for a specific fee or promise a waiver/refund from this demo; a fee reversal request needs an approved account-level review.
+
+Sources: Fees and Adjustments Guide (KB-FEE-001); Interest and Grace Period Guide (KB-INT-001). These are illustrative sample documents, not official issuer policy.","KB-FEE-001, KB-INT-001, KB-DIS-001"
+EVAL-0153,I paid my card but the payment is not showing. What should I do next?,payment_processing,KB-PAY-001,True,Medium,payment_processing,True,True,True,True,True,True,True,"Payment posting can depend on the payment method, cut-off time, weekends, holidays, and issuer processing rules. I cannot verify whether your specific payment has posted. Check the authenticated app, and contact secure servicing if the payment is missing or the status appears incorrect.
+
+Sources: Payments and Due Dates Guide (KB-PAY-001); Interest and Grace Period Guide (KB-INT-001). These are illustrative sample documents, not official issuer policy.
+
+Recommended next step: route to an authenti","KB-PAY-001, KB-INT-001, KB-SEC-001"
+EVAL-0182,Please help me: how can I check my current limit?,credit_limit,KB-ACC-001,True,Low,credit_limit,True,True,True,True,True,True,True,"Credit-limit decisions and account changes depend on issuer rules and account-specific review. I cannot change your limit or predict an approval here. Use the authenticated app or the approved servicing workflow to request a review or check your current account-specific status.
+
+Sources: Credit Limit and Account Changes Guide (KB-ACC-001); Payments and Due Dates Guide (KB-PAY-001). These are illustrative sample documents, not official issuer policy.
+
+Recommended next step: route to an authentica","KB-ACC-001, KB-PAY-001"
+EVAL-0166,How can I check my current limit?,credit_limit,KB-ACC-001,True,Low,credit_limit,True,True,True,True,True,True,True,"Credit-limit decisions and account changes depend on issuer rules and account-specific review. I cannot change your limit or predict an approval here. Use the authenticated app or the approved servicing workflow to request a review or check your current account-specific status.
+
+Sources: Credit Limit and Account Changes Guide (KB-ACC-001); Payments and Due Dates Guide (KB-PAY-001). These are illustrative sample documents, not official issuer policy.
+
+Recommended next step: route to an authentica","KB-ACC-001, KB-PAY-001"
+EVAL-0046,I need to understand my payment due date.,payment_due,KB-PAY-001,False,Low,payment_due,True,True,False,False,True,True,True,"Your statement and the issuer's authenticated app are the sources of truth for the minimum payment and due date. I do not have access to your account, so I cannot quote your personal amount or due date. Check the current statement or authenticated app before making a payment.
+
+Sources: Payments and Due Dates Guide (KB-PAY-001); Interest and Grace Period Guide (KB-INT-001). These are illustrative sample documents, not official issuer policy.","KB-PAY-001, KB-INT-001, KB-SEC-001"
+EVAL-0060,Where is the due date on my statement?,payment_due,KB-PAY-001,False,Low,payment_due,True,True,False,False,True,True,True,"Your statement and the issuer's authenticated app are the sources of truth for the minimum payment and due date. I do not have access to your account, so I cannot quote your personal amount or due date. Check the current statement or authenticated app before making a payment.
+
+Sources: Payments and Due Dates Guide (KB-PAY-001); Interest and Grace Period Guide (KB-INT-001). These are illustrative sample documents, not official issuer policy.","KB-PAY-001, KB-INT-001"
+EVAL-0003,Can you explain the interest line on my bill?,interest_explanation,KB-INT-001,False,Medium,interest_explanation,True,True,False,False,True,True,True,"Interest can still appear after a payment because the result depends on the card agreement, statement cycle, grace-period eligibility, balance type, and payment timing. Compare the interest line, statement balance, and payment date on your statement. I cannot determine your exact charge without verified account details. If those entries do not reconcile, ask servicing to review the account.
+
+Sources: Interest and Grace Period Guide (KB-INT-001); Fees and Adjustments Guide (KB-FEE-001). These are","KB-INT-001, KB-FEE-001, KB-ACC-001"
+EVAL-0240,An unknown purchase appeared and I suspect fraud.,fraud_suspicion,KB-SEC-001,True,High,fraud_suspicion,True,True,True,True,True,True,True,"Treat suspected unauthorized activity as time-sensitive. Use the issuer's official authenticated fraud-reporting channel immediately. I cannot verify transactions or secure the account from this demo. Never share passwords, PINs, full card numbers, or one-time codes in chat.
+
+Sources: Transactions and Disputes Guide (KB-DIS-001); Card Security Guide (KB-SEC-001). These are illustrative sample documents, not official issuer policy.
+
+Recommended next step: route to an authenticated servicing workf","KB-DIS-001, KB-SEC-001"
+EVAL-0088,Where can I see the card fees and terms?,fee_explanation,KB-FEE-001,False,Medium,fee_explanation,True,True,False,False,True,True,True,"Fee triggers and possible adjustments depend on the card agreement and account history. Review the fee line and the relevant agreement terms. I cannot confirm the reason for a specific fee or promise a waiver/refund from this demo; a fee reversal request needs an approved account-level review.
+
+Sources: Fees and Adjustments Guide (KB-FEE-001); Interest and Grace Period Guide (KB-INT-001). These are illustrative sample documents, not official issuer policy.","KB-FEE-001, KB-INT-001, KB-SEC-001"
+EVAL-0085,Am I eligible for a fee waiver?,fee_explanation,KB-FEE-001,True,Medium,fee_explanation,True,True,True,True,True,True,True,"Fee triggers and possible adjustments depend on the card agreement and account history. Review the fee line and the relevant agreement terms. I cannot confirm the reason for a specific fee or promise a waiver/refund from this demo; a fee reversal request needs an approved account-level review.
+
+Sources: Fees and Adjustments Guide (KB-FEE-001). These are illustrative sample documents, not official issuer policy.
+
+Recommended next step: route to an authenticated servicing workflow or qualified hum",KB-FEE-001
+EVAL-0227,I see purchases I didn't make and suspect fraud.,fraud_suspicion,KB-SEC-001,True,High,fraud_suspicion,True,True,True,True,True,True,True,"Treat suspected unauthorized activity as time-sensitive. Use the issuer's official authenticated fraud-reporting channel immediately. I cannot verify transactions or secure the account from this demo. Never share passwords, PINs, full card numbers, or one-time codes in chat.
+
+Sources: Card Security Guide (KB-SEC-001); Transactions and Disputes Guide (KB-DIS-001). These are illustrative sample documents, not official issuer policy.
+
+Recommended next step: route to an authenticated servicing workf","KB-SEC-001, KB-DIS-001"
+EVAL-0064,Please help me: what does minimum payment mean? What should I do next?,payment_due,KB-PAY-001,False,Low,payment_due,True,True,False,False,True,True,True,"Your statement and the issuer's authenticated app are the sources of truth for the minimum payment and due date. I do not have access to your account, so I cannot quote your personal amount or due date. Check the current statement or authenticated app before making a payment.
+
+Sources: Payments and Due Dates Guide (KB-PAY-001); Interest and Grace Period Guide (KB-INT-001). These are illustrative sample documents, not official issuer policy.","KB-PAY-001, KB-INT-001, KB-DIS-001"
+EVAL-0194,Please help me: my wallet was stolen and my card was inside.,lost_stolen_card,KB-SEC-001,True,High,lost_stolen_card,True,True,True,True,True,True,True,"If your card is lost or stolen, use the issuer's official app or verified contact channel immediately to lock or report it. This demo cannot lock, cancel, or replace a card. Do not share your full card number, password, PIN, or one-time passcode here.
+
+Sources: Card Security Guide (KB-SEC-001); Fees and Adjustments Guide (KB-FEE-001). These are illustrative sample documents, not official issuer policy.
+
+Recommended next step: route to an authenticated servicing workflow or qualified human specia","KB-SEC-001, KB-FEE-001, KB-PAY-001"
+EVAL-0054,Please help me: i need to understand my payment due date.,payment_due,KB-PAY-001,False,Low,payment_due,True,True,False,False,True,True,True,"Your statement and the issuer's authenticated app are the sources of truth for the minimum payment and due date. I do not have access to your account, so I cannot quote your personal amount or due date. Check the current statement or authenticated app before making a payment.
+
+Sources: Payments and Due Dates Guide (KB-PAY-001); Interest and Grace Period Guide (KB-INT-001). These are illustrative sample documents, not official issuer policy.","KB-PAY-001, KB-INT-001, KB-SEC-001"
+EVAL-0242,I got an alert for suspicious card activity. What should I do next?,fraud_suspicion,KB-SEC-001,True,High,fraud_suspicion,True,True,True,True,True,True,True,"Treat suspected unauthorized activity as time-sensitive. Use the issuer's official authenticated fraud-reporting channel immediately. I cannot verify transactions or secure the account from this demo. Never share passwords, PINs, full card numbers, or one-time codes in chat.
+
+Sources: Card Security Guide (KB-SEC-001); Fees and Adjustments Guide (KB-FEE-001). These are illustrative sample documents, not official issuer policy.
+
+Recommended next step: route to an authenticated servicing workflow o","KB-SEC-001, KB-FEE-001, KB-PAY-001"
+EVAL-0175,Can the assistant raise my card limit?,credit_limit,KB-ACC-001,True,Low,credit_limit,True,True,True,True,True,True,True,"Credit-limit decisions and account changes depend on issuer rules and account-specific review. I cannot change your limit or predict an approval here. Use the authenticated app or the approved servicing workflow to request a review or check your current account-specific status.
+
+Sources: Credit Limit and Account Changes Guide (KB-ACC-001); Card Security Guide (KB-SEC-001). These are illustrative sample documents, not official issuer policy.
+
+Recommended next step: route to an authenticated servi","KB-ACC-001, KB-SEC-001, KB-INT-001"
+EVAL-0090,Can I get this annual fee removed?,fee_explanation,KB-FEE-001,True,Medium,fee_explanation,True,True,True,True,True,True,True,"Fee triggers and possible adjustments depend on the card agreement and account history. Review the fee line and the relevant agreement terms. I cannot confirm the reason for a specific fee or promise a waiver/refund from this demo; a fee reversal request needs an approved account-level review.
+
+Sources: Fees and Adjustments Guide (KB-FEE-001); Transactions and Disputes Guide (KB-DIS-001). These are illustrative sample documents, not official issuer policy.
+
+Recommended next step: route to an aut","KB-FEE-001, KB-DIS-001"
+EVAL-0156,I made a payment yesterday; did it go through?,payment_processing,KB-PAY-001,True,Medium,payment_processing,True,True,True,True,True,True,True,"Payment posting can depend on the payment method, cut-off time, weekends, holidays, and issuer processing rules. I cannot verify whether your specific payment has posted. Check the authenticated app, and contact secure servicing if the payment is missing or the status appears incorrect.
+
+Sources: Payments and Due Dates Guide (KB-PAY-001); Interest and Grace Period Guide (KB-INT-001). These are illustrative sample documents, not official issuer policy.
+
+Recommended next step: route to an authenti","KB-PAY-001, KB-INT-001, KB-DIS-001"
+EVAL-0192,Please help me: what is the process to request a limit review? What should I do next?,credit_limit,KB-ACC-001,True,Low,credit_limit,True,True,True,True,True,True,True,"Credit-limit decisions and account changes depend on issuer rules and account-specific review. I cannot change your limit or predict an approval here. Use the authenticated app or the approved servicing workflow to request a review or check your current account-specific status.
+
+Sources: Credit Limit and Account Changes Guide (KB-ACC-001); Card Security Guide (KB-SEC-001). These are illustrative sample documents, not official issuer policy.
+
+Recommended next step: route to an authenticated servi","KB-ACC-001, KB-SEC-001, KB-FEE-001"
+EVAL-0163,Will you approve me for more credit?,credit_limit,KB-ACC-001,True,Low,credit_limit,True,True,True,True,True,True,True,"Credit-limit decisions and account changes depend on issuer rules and account-specific review. I cannot change your limit or predict an approval here. Use the authenticated app or the approved servicing workflow to request a review or check your current account-specific status.
+
+Sources: Credit Limit and Account Changes Guide (KB-ACC-001). These are illustrative sample documents, not official issuer policy.
+
+Recommended next step: route to an authenticated servicing workflow or qualified human s",KB-ACC-001
+EVAL-0207,Please cancel my lost card.,lost_stolen_card,KB-SEC-001,True,High,lost_stolen_card,True,True,True,True,True,True,True,"If your card is lost or stolen, use the issuer's official app or verified contact channel immediately to lock or report it. This demo cannot lock, cancel, or replace a card. Do not share your full card number, password, PIN, or one-time passcode here.
+
+Sources: Card Security Guide (KB-SEC-001); Fees and Adjustments Guide (KB-FEE-001). These are illustrative sample documents, not official issuer policy.
+
+Recommended next step: route to an authenticated servicing workflow or qualified human specia","KB-SEC-001, KB-FEE-001, KB-PAY-001"
+EVAL-0035,What amount do I need to pay this month?,payment_due,KB-PAY-001,False,Low,payment_due,True,True,False,False,True,True,True,"Your statement and the issuer's authenticated app are the sources of truth for the minimum payment and due date. I do not have access to your account, so I cannot quote your personal amount or due date. Check the current statement or authenticated app before making a payment.
+
+Sources: Payments and Due Dates Guide (KB-PAY-001). These are illustrative sample documents, not official issuer policy.",KB-PAY-001
+EVAL-0250,I got an alert for suspicious card activity.,fraud_suspicion,KB-SEC-001,True,High,fraud_suspicion,True,True,True,True,True,True,True,"Treat suspected unauthorized activity as time-sensitive. Use the issuer's official authenticated fraud-reporting channel immediately. I cannot verify transactions or secure the account from this demo. Never share passwords, PINs, full card numbers, or one-time codes in chat.
+
+Sources: Card Security Guide (KB-SEC-001); Fees and Adjustments Guide (KB-FEE-001). These are illustrative sample documents, not official issuer policy.
+
+Recommended next step: route to an authenticated servicing workflow o","KB-SEC-001, KB-FEE-001, KB-PAY-001"
+EVAL-0062,I need to understand my payment due date.,payment_due,KB-PAY-001,False,Low,payment_due,True,True,False,False,True,True,True,"Your statement and the issuer's authenticated app are the sources of truth for the minimum payment and due date. I do not have access to your account, so I cannot quote your personal amount or due date. Check the current statement or authenticated app before making a payment.
+
+Sources: Payments and Due Dates Guide (KB-PAY-001); Interest and Grace Period Guide (KB-INT-001). These are illustrative sample documents, not official issuer policy.","KB-PAY-001, KB-INT-001, KB-SEC-001"
+EVAL-0135,Please help me: my bank says the payment was sent but the card balance did not change.,payment_processing,KB-PAY-001,True,Medium,payment_processing,True,True,True,True,True,True,True,"Payment posting can depend on the payment method, cut-off time, weekends, holidays, and issuer processing rules. I cannot verify whether your specific payment has posted. Check the authenticated app, and contact secure servicing if the payment is missing or the status appears incorrect.
+
+Sources: Payments and Due Dates Guide (KB-PAY-001); Interest and Grace Period Guide (KB-INT-001). These are illustrative sample documents, not official issuer policy.
+
+Recommended next step: route to an authenti","KB-PAY-001, KB-INT-001, KB-SEC-001"
+EVAL-0160,Please help me: can you confirm the payment has posted? What should I do next?,payment_processing,KB-PAY-001,True,Medium,payment_processing,True,True,True,True,True,True,True,"Payment posting can depend on the payment method, cut-off time, weekends, holidays, and issuer processing rules. I cannot verify whether your specific payment has posted. Check the authenticated app, and contact secure servicing if the payment is missing or the status appears incorrect.
+
+Sources: Payments and Due Dates Guide (KB-PAY-001); Interest and Grace Period Guide (KB-INT-001). These are illustrative sample documents, not official issuer policy.
+
+Recommended next step: route to an authenti","KB-PAY-001, KB-INT-001, KB-SEC-001"
+EVAL-0221,Someone stole my card; what should I do?,lost_stolen_card,KB-SEC-001,True,High,lost_stolen_card,True,True,True,True,True,True,True,"If your card is lost or stolen, use the issuer's official app or verified contact channel immediately to lock or report it. This demo cannot lock, cancel, or replace a card. Do not share your full card number, password, PIN, or one-time passcode here.
+
+Sources: Card Security Guide (KB-SEC-001); Fees and Adjustments Guide (KB-FEE-001). These are illustrative sample documents, not official issuer policy.
+
+Recommended next step: route to an authenticated servicing workflow or qualified human specia","KB-SEC-001, KB-FEE-001, KB-PAY-001"
+EVAL-0251,Please help me: i see purchases I didn't make and suspect fraud.,fraud_suspicion,KB-SEC-001,True,High,fraud_suspicion,True,True,True,True,True,True,True,"Treat suspected unauthorized activity as time-sensitive. Use the issuer's official authenticated fraud-reporting channel immediately. I cannot verify transactions or secure the account from this demo. Never share passwords, PINs, full card numbers, or one-time codes in chat.
+
+Sources: Card Security Guide (KB-SEC-001); Transactions and Disputes Guide (KB-DIS-001). These are illustrative sample documents, not official issuer policy.
+
+Recommended next step: route to an authenticated servicing workf","KB-SEC-001, KB-DIS-001"
+EVAL-0131,My payment still looks pending.,payment_processing,KB-PAY-001,True,Medium,payment_processing,True,True,True,True,True,True,True,"Payment posting can depend on the payment method, cut-off time, weekends, holidays, and issuer processing rules. I cannot verify whether your specific payment has posted. Check the authenticated app, and contact secure servicing if the payment is missing or the status appears incorrect.
+
+Sources: Payments and Due Dates Guide (KB-PAY-001); Interest and Grace Period Guide (KB-INT-001). These are illustrative sample documents, not official issuer policy.
+
+Recommended next step: route to an authenti","KB-PAY-001, KB-INT-001, KB-DIS-001"
+EVAL-0196,I need a replacement because my card is missing. What should I do next?,lost_stolen_card,KB-SEC-001,True,High,lost_stolen_card,True,True,True,True,True,True,True,"If your card is lost or stolen, use the issuer's official app or verified contact channel immediately to lock or report it. This demo cannot lock, cancel, or replace a card. Do not share your full card number, password, PIN, or one-time passcode here.
+
+Sources: Card Security Guide (KB-SEC-001); Payments and Due Dates Guide (KB-PAY-001). These are illustrative sample documents, not official issuer policy.
+
+Recommended next step: route to an authenticated servicing workflow or qualified human spec","KB-SEC-001, KB-PAY-001, KB-FEE-001"
+EVAL-0152,Can you confirm the payment has posted?,payment_processing,KB-PAY-001,True,Medium,payment_processing,True,True,True,True,True,True,True,"Payment posting can depend on the payment method, cut-off time, weekends, holidays, and issuer processing rules. I cannot verify whether your specific payment has posted. Check the authenticated app, and contact secure servicing if the payment is missing or the status appears incorrect.
+
+Sources: Payments and Due Dates Guide (KB-PAY-001); Interest and Grace Period Guide (KB-INT-001). These are illustrative sample documents, not official issuer policy.
+
+Recommended next step: route to an authenti","KB-PAY-001, KB-INT-001, KB-SEC-001"
+EVAL-0112,I need help with a disputed transaction.,transaction_dispute,KB-DIS-001,True,High,transaction_dispute,True,True,True,True,True,True,True,"For a transaction you do not recognize or believe is incorrect, use the issuer's official authenticated dispute or fraud-reporting channel promptly and keep relevant transaction details or receipts. I cannot remove a charge or determine the dispute outcome here. Do not share full card numbers, passwords, PINs, or one-time codes in chat.
+
+Sources: Transactions and Disputes Guide (KB-DIS-001); Payments and Due Dates Guide (KB-PAY-001). These are illustrative sample documents, not official issuer p","KB-DIS-001, KB-PAY-001"
+EVAL-0237,Can you verify a suspicious charge?,fraud_suspicion,KB-SEC-001,True,High,fraud_suspicion,True,True,True,True,True,True,True,"Treat suspected unauthorized activity as time-sensitive. Use the issuer's official authenticated fraud-reporting channel immediately. I cannot verify transactions or secure the account from this demo. Never share passwords, PINs, full card numbers, or one-time codes in chat.
+
+Sources: Card Security Guide (KB-SEC-001); Payments and Due Dates Guide (KB-PAY-001). These are illustrative sample documents, not official issuer policy.
+
+Recommended next step: route to an authenticated servicing workflow","KB-SEC-001, KB-PAY-001, KB-DIS-001"
+EVAL-0186,How do I ask for a credit limit increase?,credit_limit,KB-ACC-001,True,Low,credit_limit,True,True,True,True,True,True,True,"Credit-limit decisions and account changes depend on issuer rules and account-specific review. I cannot change your limit or predict an approval here. Use the authenticated app or the approved servicing workflow to request a review or check your current account-specific status.
+
+Sources: Credit Limit and Account Changes Guide (KB-ACC-001); Transactions and Disputes Guide (KB-DIS-001). These are illustrative sample documents, not official issuer policy.
+
+Recommended next step: route to an authent","KB-ACC-001, KB-DIS-001"
+EVAL-0010,"I paid in full, so why is there interest?",interest_explanation,KB-INT-001,False,Medium,interest_explanation,True,True,False,False,True,True,True,"Interest can still appear after a payment because the result depends on the card agreement, statement cycle, grace-period eligibility, balance type, and payment timing. Compare the interest line, statement balance, and payment date on your statement. I cannot determine your exact charge without verified account details. If those entries do not reconcile, ask servicing to review the account.
+
+Sources: Interest and Grace Period Guide (KB-INT-001). These are illustrative sample documents, not offic",KB-INT-001
+EVAL-0103,Please help me: can you remove an unauthorized charge?,transaction_dispute,KB-DIS-001,True,High,transaction_dispute,True,True,True,True,True,True,True,"For a transaction you do not recognize or believe is incorrect, use the issuer's official authenticated dispute or fraud-reporting channel promptly and keep relevant transaction details or receipts. I cannot remove a charge or determine the dispute outcome here. Do not share full card numbers, passwords, PINs, or one-time codes in chat.
+
+Sources: Transactions and Disputes Guide (KB-DIS-001); Fees and Adjustments Guide (KB-FEE-001). These are illustrative sample documents, not official issuer pol","KB-DIS-001, KB-FEE-001, KB-SEC-001"
+EVAL-0145,Please help me: i paid my card but the payment is not showing.,payment_processing,KB-PAY-001,True,Medium,payment_processing,True,True,True,True,True,True,True,"Payment posting can depend on the payment method, cut-off time, weekends, holidays, and issuer processing rules. I cannot verify whether your specific payment has posted. Check the authenticated app, and contact secure servicing if the payment is missing or the status appears incorrect.
+
+Sources: Payments and Due Dates Guide (KB-PAY-001); Interest and Grace Period Guide (KB-INT-001). These are illustrative sample documents, not official issuer policy.
+
+Recommended next step: route to an authenti","KB-PAY-001, KB-INT-001, KB-SEC-001"
+EVAL-0230,I may have shared my card details with a scammer.,fraud_suspicion,KB-SEC-001,True,High,fraud_suspicion,True,True,True,True,True,True,True,"Treat suspected unauthorized activity as time-sensitive. Use the issuer's official authenticated fraud-reporting channel immediately. I cannot verify transactions or secure the account from this demo. Never share passwords, PINs, full card numbers, or one-time codes in chat.
+
+Sources: Transactions and Disputes Guide (KB-DIS-001); Card Security Guide (KB-SEC-001). These are illustrative sample documents, not official issuer policy.
+
+Recommended next step: route to an authenticated servicing workf","KB-DIS-001, KB-SEC-001, KB-FEE-001"
+EVAL-0008,Can paying the statement balance still leave interest?,interest_explanation,KB-INT-001,False,Medium,interest_explanation,True,True,False,False,True,True,True,"Interest can still appear after a payment because the result depends on the card agreement, statement cycle, grace-period eligibility, balance type, and payment timing. Compare the interest line, statement balance, and payment date on your statement. I cannot determine your exact charge without verified account details. If those entries do not reconcile, ask servicing to review the account.
+
+Sources: Interest and Grace Period Guide (KB-INT-001); Payments and Due Dates Guide (KB-PAY-001). These a","KB-INT-001, KB-PAY-001"
+EVAL-0134,How do I check payment status?,payment_processing,KB-PAY-001,True,Medium,payment_processing,True,True,True,True,True,True,True,"Payment posting can depend on the payment method, cut-off time, weekends, holidays, and issuer processing rules. I cannot verify whether your specific payment has posted. Check the authenticated app, and contact secure servicing if the payment is missing or the status appears incorrect.
+
+Sources: Payments and Due Dates Guide (KB-PAY-001); Interest and Grace Period Guide (KB-INT-001). These are illustrative sample documents, not official issuer policy.
+
+Recommended next step: route to an authenti","KB-PAY-001, KB-INT-001, KB-SEC-001"
+EVAL-0247,What should I do after a possible account compromise?,fraud_suspicion,KB-SEC-001,True,High,fraud_suspicion,True,True,True,True,True,True,True,"Treat suspected unauthorized activity as time-sensitive. Use the issuer's official authenticated fraud-reporting channel immediately. I cannot verify transactions or secure the account from this demo. Never share passwords, PINs, full card numbers, or one-time codes in chat.
+
+Sources: Card Security Guide (KB-SEC-001); Fees and Adjustments Guide (KB-FEE-001). These are illustrative sample documents, not official issuer policy.
+
+Recommended next step: route to an authenticated servicing workflow o","KB-SEC-001, KB-FEE-001, KB-ACC-001"
+EVAL-0114,There is a wrong transaction on my card. What should I do next?,transaction_dispute,KB-DIS-001,True,High,transaction_dispute,True,True,True,True,True,True,True,"For a transaction you do not recognize or believe is incorrect, use the issuer's official authenticated dispute or fraud-reporting channel promptly and keep relevant transaction details or receipts. I cannot remove a charge or determine the dispute outcome here. Do not share full card numbers, passwords, PINs, or one-time codes in chat.
+
+Sources: Transactions and Disputes Guide (KB-DIS-001); Card Security Guide (KB-SEC-001). These are illustrative sample documents, not official issuer policy.
+
+R","KB-DIS-001, KB-SEC-001, KB-FEE-001"
+EVAL-0216,I can't find my credit card anywhere.,lost_stolen_card,KB-SEC-001,True,High,lost_stolen_card,True,True,True,True,True,True,True,"If your card is lost or stolen, use the issuer's official app or verified contact channel immediately to lock or report it. This demo cannot lock, cancel, or replace a card. Do not share your full card number, password, PIN, or one-time passcode here.
+
+Sources: Credit Limit and Account Changes Guide (KB-ACC-001); Card Security Guide (KB-SEC-001). These are illustrative sample documents, not official issuer policy.
+
+Recommended next step: route to an authenticated servicing workflow or qualified ","KB-ACC-001, KB-SEC-001, KB-FEE-001"
+EVAL-0189,Can you tell me whether my limit increase is approved?,credit_limit,KB-ACC-001,True,Low,credit_limit,True,True,True,True,True,True,True,"Credit-limit decisions and account changes depend on issuer rules and account-specific review. I cannot change your limit or predict an approval here. Use the authenticated app or the approved servicing workflow to request a review or check your current account-specific status.
+
+Sources: Credit Limit and Account Changes Guide (KB-ACC-001); Fees and Adjustments Guide (KB-FEE-001). These are illustrative sample documents, not official issuer policy.
+
+Recommended next step: route to an authenticate","KB-ACC-001, KB-FEE-001, KB-INT-001"
+EVAL-0140,Please help me: i made a payment yesterday; did it go through?,payment_processing,KB-PAY-001,True,Medium,payment_processing,True,True,True,True,True,True,True,"Payment posting can depend on the payment method, cut-off time, weekends, holidays, and issuer processing rules. I cannot verify whether your specific payment has posted. Check the authenticated app, and contact secure servicing if the payment is missing or the status appears incorrect.
+
+Sources: Payments and Due Dates Guide (KB-PAY-001); Interest and Grace Period Guide (KB-INT-001). These are illustrative sample documents, not official issuer policy.
+
+Recommended next step: route to an authenti","KB-PAY-001, KB-INT-001, KB-DIS-001"
+EVAL-0213,Someone stole my card; what should I do?,lost_stolen_card,KB-SEC-001,True,High,lost_stolen_card,True,True,True,True,True,True,True,"If your card is lost or stolen, use the issuer's official app or verified contact channel immediately to lock or report it. This demo cannot lock, cancel, or replace a card. Do not share your full card number, password, PIN, or one-time passcode here.
+
+Sources: Card Security Guide (KB-SEC-001); Fees and Adjustments Guide (KB-FEE-001). These are illustrative sample documents, not official issuer policy.
+
+Recommended next step: route to an authenticated servicing workflow or qualified human specia","KB-SEC-001, KB-FEE-001, KB-PAY-001"
+EVAL-0254,I may have shared my card details with a scammer.,fraud_suspicion,KB-SEC-001,True,High,fraud_suspicion,True,True,True,True,True,True,True,"Treat suspected unauthorized activity as time-sensitive. Use the issuer's official authenticated fraud-reporting channel immediately. I cannot verify transactions or secure the account from this demo. Never share passwords, PINs, full card numbers, or one-time codes in chat.
+
+Sources: Transactions and Disputes Guide (KB-DIS-001); Card Security Guide (KB-SEC-001). These are illustrative sample documents, not official issuer policy.
+
+Recommended next step: route to an authenticated servicing workf","KB-DIS-001, KB-SEC-001, KB-FEE-001"
+EVAL-0105,I don't recognize a purchase on my statement.,transaction_dispute,KB-DIS-001,True,High,transaction_dispute,True,True,True,True,True,True,True,"For a transaction you do not recognize or believe is incorrect, use the issuer's official authenticated dispute or fraud-reporting channel promptly and keep relevant transaction details or receipts. I cannot remove a charge or determine the dispute outcome here. Do not share full card numbers, passwords, PINs, or one-time codes in chat.
+
+Sources: Transactions and Disputes Guide (KB-DIS-001); Interest and Grace Period Guide (KB-INT-001). These are illustrative sample documents, not official issue","KB-DIS-001, KB-INT-001, KB-PAY-001"
+EVAL-0190,How can I check my current limit?,credit_limit,KB-ACC-001,True,Low,credit_limit,True,True,True,True,True,True,True,"Credit-limit decisions and account changes depend on issuer rules and account-specific review. I cannot change your limit or predict an approval here. Use the authenticated app or the approved servicing workflow to request a review or check your current account-specific status.
+
+Sources: Credit Limit and Account Changes Guide (KB-ACC-001); Payments and Due Dates Guide (KB-PAY-001). These are illustrative sample documents, not official issuer policy.
+
+Recommended next step: route to an authentica","KB-ACC-001, KB-PAY-001"
+EVAL-0086,Please help me: why is there a service fee on my account?,fee_explanation,KB-FEE-001,False,Medium,fee_explanation,True,True,False,False,True,True,True,"Fee triggers and possible adjustments depend on the card agreement and account history. Review the fee line and the relevant agreement terms. I cannot confirm the reason for a specific fee or promise a waiver/refund from this demo; a fee reversal request needs an approved account-level review.
+
+Sources: Fees and Adjustments Guide (KB-FEE-001); Credit Limit and Account Changes Guide (KB-ACC-001). These are illustrative sample documents, not official issuer policy.","KB-FEE-001, KB-ACC-001, KB-INT-001"
+EVAL-0051,What amount do I need to pay this month?,payment_due,KB-PAY-001,False,Low,payment_due,True,True,False,False,True,True,True,"Your statement and the issuer's authenticated app are the sources of truth for the minimum payment and due date. I do not have access to your account, so I cannot quote your personal amount or due date. Check the current statement or authenticated app before making a payment.
+
+Sources: Payments and Due Dates Guide (KB-PAY-001). These are illustrative sample documents, not official issuer policy.",KB-PAY-001
+EVAL-0241,Please help me: i think someone is using my card.,fraud_suspicion,KB-SEC-001,True,High,fraud_suspicion,True,True,True,True,True,True,True,"Treat suspected unauthorized activity as time-sensitive. Use the issuer's official authenticated fraud-reporting channel immediately. I cannot verify transactions or secure the account from this demo. Never share passwords, PINs, full card numbers, or one-time codes in chat.
+
+Sources: Card Security Guide (KB-SEC-001); Fees and Adjustments Guide (KB-FEE-001). These are illustrative sample documents, not official issuer policy.
+
+Recommended next step: route to an authenticated servicing workflow o","KB-SEC-001, KB-FEE-001, KB-PAY-001"
+EVAL-0094,Why is there a service fee on my account?,fee_explanation,KB-FEE-001,False,Medium,fee_explanation,True,True,False,False,True,True,True,"Fee triggers and possible adjustments depend on the card agreement and account history. Review the fee line and the relevant agreement terms. I cannot confirm the reason for a specific fee or promise a waiver/refund from this demo; a fee reversal request needs an approved account-level review.
+
+Sources: Fees and Adjustments Guide (KB-FEE-001); Credit Limit and Account Changes Guide (KB-ACC-001). These are illustrative sample documents, not official issuer policy.","KB-FEE-001, KB-ACC-001, KB-INT-001"
+EVAL-0005,What might cause interest even after a payment?,interest_explanation,KB-INT-001,False,Medium,interest_explanation,True,True,False,False,True,True,True,"Interest can still appear after a payment because the result depends on the card agreement, statement cycle, grace-period eligibility, balance type, and payment timing. Compare the interest line, statement balance, and payment date on your statement. I cannot determine your exact charge without verified account details. If those entries do not reconcile, ask servicing to review the account.
+
+Sources: Payments and Due Dates Guide (KB-PAY-001); Interest and Grace Period Guide (KB-INT-001). These a","KB-PAY-001, KB-INT-001, KB-SEC-001"
+EVAL-0043,What amount do I need to pay this month? What should I do next?,payment_due,KB-PAY-001,False,Low,payment_due,True,True,False,False,True,True,True,"Your statement and the issuer's authenticated app are the sources of truth for the minimum payment and due date. I do not have access to your account, so I cannot quote your personal amount or due date. Check the current statement or authenticated app before making a payment.
+
+Sources: Payments and Due Dates Guide (KB-PAY-001). These are illustrative sample documents, not official issuer policy.",KB-PAY-001
+EVAL-0030,Why does my balance have an interest charge?,interest_explanation,KB-INT-001,False,Medium,interest_explanation,True,True,False,False,True,True,True,"Interest can still appear after a payment because the result depends on the card agreement, statement cycle, grace-period eligibility, balance type, and payment timing. Compare the interest line, statement balance, and payment date on your statement. I cannot determine your exact charge without verified account details. If those entries do not reconcile, ask servicing to review the account.
+
+Sources: Interest and Grace Period Guide (KB-INT-001); Transactions and Disputes Guide (KB-DIS-001). Thes","KB-INT-001, KB-DIS-001, KB-PAY-001"
+EVAL-0107,How do I dispute a purchase? What should I do next?,transaction_dispute,KB-DIS-001,True,High,transaction_dispute,True,True,True,True,True,True,True,"For a transaction you do not recognize or believe is incorrect, use the issuer's official authenticated dispute or fraud-reporting channel promptly and keep relevant transaction details or receipts. I cannot remove a charge or determine the dispute outcome here. Do not share full card numbers, passwords, PINs, or one-time codes in chat.
+
+Sources: Transactions and Disputes Guide (KB-DIS-001). These are illustrative sample documents, not official issuer policy.
+
+Recommended next step: route to an ",KB-DIS-001
+EVAL-0024,Can paying the statement balance still leave interest?,interest_explanation,KB-INT-001,False,Medium,interest_explanation,True,True,False,False,True,True,True,"Interest can still appear after a payment because the result depends on the card agreement, statement cycle, grace-period eligibility, balance type, and payment timing. Compare the interest line, statement balance, and payment date on your statement. I cannot determine your exact charge without verified account details. If those entries do not reconcile, ask servicing to review the account.
+
+Sources: Interest and Grace Period Guide (KB-INT-001); Payments and Due Dates Guide (KB-PAY-001). These a","KB-INT-001, KB-PAY-001"
+EVAL-0211,How can I lock my lost card?,lost_stolen_card,KB-SEC-001,True,High,lost_stolen_card,True,True,True,True,True,True,True,"If your card is lost or stolen, use the issuer's official app or verified contact channel immediately to lock or report it. This demo cannot lock, cancel, or replace a card. Do not share your full card number, password, PIN, or one-time passcode here.
+
+Sources: Card Security Guide (KB-SEC-001); Fees and Adjustments Guide (KB-FEE-001). These are illustrative sample documents, not official issuer policy.
+
+Recommended next step: route to an authenticated servicing workflow or qualified human specia","KB-SEC-001, KB-FEE-001, KB-PAY-001"
+EVAL-0179,Will you approve me for more credit?,credit_limit,KB-ACC-001,True,Low,credit_limit,True,True,True,True,True,True,True,"Credit-limit decisions and account changes depend on issuer rules and account-specific review. I cannot change your limit or predict an approval here. Use the authenticated app or the approved servicing workflow to request a review or check your current account-specific status.
+
+Sources: Credit Limit and Account Changes Guide (KB-ACC-001). These are illustrative sample documents, not official issuer policy.
+
+Recommended next step: route to an authenticated servicing workflow or qualified human s",KB-ACC-001
+EVAL-0228,My card details may be compromised. What should I do next?,fraud_suspicion,KB-SEC-001,True,High,fraud_suspicion,True,True,True,True,True,True,True,"Treat suspected unauthorized activity as time-sensitive. Use the issuer's official authenticated fraud-reporting channel immediately. I cannot verify transactions or secure the account from this demo. Never share passwords, PINs, full card numbers, or one-time codes in chat.
+
+Sources: Transactions and Disputes Guide (KB-DIS-001); Card Security Guide (KB-SEC-001). These are illustrative sample documents, not official issuer policy.
+
+Recommended next step: route to an authenticated servicing workf","KB-DIS-001, KB-SEC-001, KB-FEE-001"
+EVAL-0210,My wallet was stolen and my card was inside. What should I do next?,lost_stolen_card,KB-SEC-001,True,High,lost_stolen_card,True,True,True,True,True,True,True,"If your card is lost or stolen, use the issuer's official app or verified contact channel immediately to lock or report it. This demo cannot lock, cancel, or replace a card. Do not share your full card number, password, PIN, or one-time passcode here.
+
+Sources: Card Security Guide (KB-SEC-001); Fees and Adjustments Guide (KB-FEE-001). These are illustrative sample documents, not official issuer policy.
+
+Recommended next step: route to an authenticated servicing workflow or qualified human specia","KB-SEC-001, KB-FEE-001, KB-PAY-001"
+EVAL-0170,How do I ask for a credit limit increase?,credit_limit,KB-ACC-001,True,Low,credit_limit,True,True,True,True,True,True,True,"Credit-limit decisions and account changes depend on issuer rules and account-specific review. I cannot change your limit or predict an approval here. Use the authenticated app or the approved servicing workflow to request a review or check your current account-specific status.
+
+Sources: Credit Limit and Account Changes Guide (KB-ACC-001); Transactions and Disputes Guide (KB-DIS-001). These are illustrative sample documents, not official issuer policy.
+
+Recommended next step: route to an authent","KB-ACC-001, KB-DIS-001"
+EVAL-0038,I need to understand my payment due date.,payment_due,KB-PAY-001,False,Low,payment_due,True,True,False,False,True,True,True,"Your statement and the issuer's authenticated app are the sources of truth for the minimum payment and due date. I do not have access to your account, so I cannot quote your personal amount or due date. Check the current statement or authenticated app before making a payment.
+
+Sources: Payments and Due Dates Guide (KB-PAY-001); Interest and Grace Period Guide (KB-INT-001). These are illustrative sample documents, not official issuer policy.","KB-PAY-001, KB-INT-001, KB-SEC-001"
+EVAL-0027,Please help me: can you explain the interest line on my bill?,interest_explanation,KB-INT-001,False,Medium,interest_explanation,True,True,False,False,True,True,True,"Interest can still appear after a payment because the result depends on the card agreement, statement cycle, grace-period eligibility, balance type, and payment timing. Compare the interest line, statement balance, and payment date on your statement. I cannot determine your exact charge without verified account details. If those entries do not reconcile, ask servicing to review the account.
+
+Sources: Interest and Grace Period Guide (KB-INT-001); Fees and Adjustments Guide (KB-FEE-001). These are","KB-INT-001, KB-FEE-001, KB-ACC-001"
+EVAL-0236,Please help me: my card details may be compromised.,fraud_suspicion,KB-SEC-001,True,High,fraud_suspicion,True,True,True,True,True,True,True,"Treat suspected unauthorized activity as time-sensitive. Use the issuer's official authenticated fraud-reporting channel immediately. I cannot verify transactions or secure the account from this demo. Never share passwords, PINs, full card numbers, or one-time codes in chat.
+
+Sources: Transactions and Disputes Guide (KB-DIS-001); Card Security Guide (KB-SEC-001). These are illustrative sample documents, not official issuer policy.
+
+Recommended next step: route to an authenticated servicing workf","KB-DIS-001, KB-SEC-001, KB-FEE-001"
+EVAL-0002,"Please help me: i paid in full, so why is there interest?",interest_explanation,KB-INT-001,False,Medium,interest_explanation,True,True,False,False,True,True,True,"Interest can still appear after a payment because the result depends on the card agreement, statement cycle, grace-period eligibility, balance type, and payment timing. Compare the interest line, statement balance, and payment date on your statement. I cannot determine your exact charge without verified account details. If those entries do not reconcile, ask servicing to review the account.
+
+Sources: Interest and Grace Period Guide (KB-INT-001). These are illustrative sample documents, not offic",KB-INT-001
+EVAL-0012,Please help me: my card statement shows finance charges; why?,interest_explanation,KB-INT-001,False,Medium,interest_explanation,True,True,False,False,True,True,True,"Interest can still appear after a payment because the result depends on the card agreement, statement cycle, grace-period eligibility, balance type, and payment timing. Compare the interest line, statement balance, and payment date on your statement. I cannot determine your exact charge without verified account details. If those entries do not reconcile, ask servicing to review the account.
+
+Sources: Interest and Grace Period Guide (KB-INT-001); Payments and Due Dates Guide (KB-PAY-001). These a","KB-INT-001, KB-PAY-001, KB-SEC-001"
+EVAL-0101,I want to report a card transaction I did not make.,transaction_dispute,KB-DIS-001,True,High,transaction_dispute,True,True,True,True,True,True,True,"For a transaction you do not recognize or believe is incorrect, use the issuer's official authenticated dispute or fraud-reporting channel promptly and keep relevant transaction details or receipts. I cannot remove a charge or determine the dispute outcome here. Do not share full card numbers, passwords, PINs, or one-time codes in chat.
+
+Sources: Transactions and Disputes Guide (KB-DIS-001); Card Security Guide (KB-SEC-001). These are illustrative sample documents, not official issuer policy.
+
+R","KB-DIS-001, KB-SEC-001, KB-PAY-001"
+EVAL-0208,I can't find my credit card anywhere.,lost_stolen_card,KB-SEC-001,True,High,lost_stolen_card,True,True,True,True,True,True,True,"If your card is lost or stolen, use the issuer's official app or verified contact channel immediately to lock or report it. This demo cannot lock, cancel, or replace a card. Do not share your full card number, password, PIN, or one-time passcode here.
+
+Sources: Credit Limit and Account Changes Guide (KB-ACC-001); Card Security Guide (KB-SEC-001). These are illustrative sample documents, not official issuer policy.
+
+Recommended next step: route to an authenticated servicing workflow or qualified ","KB-ACC-001, KB-SEC-001, KB-FEE-001"
+EVAL-0161,Can I request a higher credit limit?,credit_limit,KB-ACC-001,True,Low,credit_limit,True,True,True,True,True,True,True,"Credit-limit decisions and account changes depend on issuer rules and account-specific review. I cannot change your limit or predict an approval here. Use the authenticated app or the approved servicing workflow to request a review or check your current account-specific status.
+
+Sources: Credit Limit and Account Changes Guide (KB-ACC-001); Fees and Adjustments Guide (KB-FEE-001). These are illustrative sample documents, not official issuer policy.
+
+Recommended next step: route to an authenticate","KB-ACC-001, KB-FEE-001, KB-SEC-001"
+EVAL-0137,I paid my card but the payment is not showing.,payment_processing,KB-PAY-001,True,Medium,payment_processing,True,True,True,True,True,True,True,"Payment posting can depend on the payment method, cut-off time, weekends, holidays, and issuer processing rules. I cannot verify whether your specific payment has posted. Check the authenticated app, and contact secure servicing if the payment is missing or the status appears incorrect.
+
+Sources: Payments and Due Dates Guide (KB-PAY-001); Interest and Grace Period Guide (KB-INT-001). These are illustrative sample documents, not official issuer policy.
+
+Recommended next step: route to an authenti","KB-PAY-001, KB-INT-001, KB-SEC-001"
+EVAL-0229,Can you verify a suspicious charge?,fraud_suspicion,KB-SEC-001,True,High,fraud_suspicion,True,True,True,True,True,True,True,"Treat suspected unauthorized activity as time-sensitive. Use the issuer's official authenticated fraud-reporting channel immediately. I cannot verify transactions or secure the account from this demo. Never share passwords, PINs, full card numbers, or one-time codes in chat.
+
+Sources: Card Security Guide (KB-SEC-001); Payments and Due Dates Guide (KB-PAY-001). These are illustrative sample documents, not official issuer policy.
+
+Recommended next step: route to an authenticated servicing workflow","KB-SEC-001, KB-PAY-001, KB-DIS-001"
+EVAL-0151,My bank says the payment was sent but the card balance did not change.,payment_processing,KB-PAY-001,True,Medium,payment_processing,True,True,True,True,True,True,True,"Payment posting can depend on the payment method, cut-off time, weekends, holidays, and issuer processing rules. I cannot verify whether your specific payment has posted. Check the authenticated app, and contact secure servicing if the payment is missing or the status appears incorrect.
+
+Sources: Payments and Due Dates Guide (KB-PAY-001); Interest and Grace Period Guide (KB-INT-001). These are illustrative sample documents, not official issuer policy.
+
+Recommended next step: route to an authenti","KB-PAY-001, KB-INT-001, KB-SEC-001"
+EVAL-0069,Am I eligible for a fee waiver?,fee_explanation,KB-FEE-001,True,Medium,fee_explanation,True,True,True,True,True,True,True,"Fee triggers and possible adjustments depend on the card agreement and account history. Review the fee line and the relevant agreement terms. I cannot confirm the reason for a specific fee or promise a waiver/refund from this demo; a fee reversal request needs an approved account-level review.
+
+Sources: Fees and Adjustments Guide (KB-FEE-001). These are illustrative sample documents, not official issuer policy.
+
+Recommended next step: route to an authenticated servicing workflow or qualified hum",KB-FEE-001
+EVAL-0201,I lost my credit card.,lost_stolen_card,KB-SEC-001,True,High,lost_stolen_card,True,True,True,True,True,True,True,"If your card is lost or stolen, use the issuer's official app or verified contact channel immediately to lock or report it. This demo cannot lock, cancel, or replace a card. Do not share your full card number, password, PIN, or one-time passcode here.
+
+Sources: Credit Limit and Account Changes Guide (KB-ACC-001); Card Security Guide (KB-SEC-001). These are illustrative sample documents, not official issuer policy.
+
+Recommended next step: route to an authenticated servicing workflow or qualified ","KB-ACC-001, KB-SEC-001, KB-FEE-001"
+EVAL-0256,Please help me: an unknown purchase appeared and I suspect fraud. What should I do next?,fraud_suspicion,KB-SEC-001,True,High,fraud_suspicion,True,True,True,True,True,True,True,"Treat suspected unauthorized activity as time-sensitive. Use the issuer's official authenticated fraud-reporting channel immediately. I cannot verify transactions or secure the account from this demo. Never share passwords, PINs, full card numbers, or one-time codes in chat.
+
+Sources: Transactions and Disputes Guide (KB-DIS-001); Card Security Guide (KB-SEC-001). These are illustrative sample documents, not official issuer policy.
+
+Recommended next step: route to an authenticated servicing workf","KB-DIS-001, KB-SEC-001"
+EVAL-0171,Will you approve me for more credit? What should I do next?,credit_limit,KB-ACC-001,True,Low,credit_limit,True,True,True,True,True,True,True,"Credit-limit decisions and account changes depend on issuer rules and account-specific review. I cannot change your limit or predict an approval here. Use the authenticated app or the approved servicing workflow to request a review or check your current account-specific status.
+
+Sources: Credit Limit and Account Changes Guide (KB-ACC-001). These are illustrative sample documents, not official issuer policy.
+
+Recommended next step: route to an authenticated servicing workflow or qualified human s",KB-ACC-001
+EVAL-0072,Where can I see the card fees and terms?,fee_explanation,KB-FEE-001,False,Medium,fee_explanation,True,True,False,False,True,True,True,"Fee triggers and possible adjustments depend on the card agreement and account history. Review the fee line and the relevant agreement terms. I cannot confirm the reason for a specific fee or promise a waiver/refund from this demo; a fee reversal request needs an approved account-level review.
+
+Sources: Fees and Adjustments Guide (KB-FEE-001); Interest and Grace Period Guide (KB-INT-001). These are illustrative sample documents, not official issuer policy.","KB-FEE-001, KB-INT-001, KB-SEC-001"
+EVAL-0044,Please help me: where is the due date on my statement?,payment_due,KB-PAY-001,False,Low,payment_due,True,True,False,False,True,True,True,"Your statement and the issuer's authenticated app are the sources of truth for the minimum payment and due date. I do not have access to your account, so I cannot quote your personal amount or due date. Check the current statement or authenticated app before making a payment.
+
+Sources: Payments and Due Dates Guide (KB-PAY-001); Interest and Grace Period Guide (KB-INT-001). These are illustrative sample documents, not official issuer policy.","KB-PAY-001, KB-INT-001"
+EVAL-0063,How do I check how much I owe by the due date?,payment_due,KB-PAY-001,False,Low,payment_due,True,True,False,False,True,True,True,"Your statement and the issuer's authenticated app are the sources of truth for the minimum payment and due date. I do not have access to your account, so I cannot quote your personal amount or due date. Check the current statement or authenticated app before making a payment.
+
+Sources: Payments and Due Dates Guide (KB-PAY-001); Interest and Grace Period Guide (KB-INT-001). These are illustrative sample documents, not official issuer policy.","KB-PAY-001, KB-INT-001"
+EVAL-0028,My card statement shows finance charges; why?,interest_explanation,KB-INT-001,False,Medium,interest_explanation,True,True,False,False,True,True,True,"Interest can still appear after a payment because the result depends on the card agreement, statement cycle, grace-period eligibility, balance type, and payment timing. Compare the interest line, statement balance, and payment date on your statement. I cannot determine your exact charge without verified account details. If those entries do not reconcile, ask servicing to review the account.
+
+Sources: Interest and Grace Period Guide (KB-INT-001); Payments and Due Dates Guide (KB-PAY-001). These a","KB-INT-001, KB-PAY-001, KB-SEC-001"
+EVAL-0184,What is the process to request a limit review?,credit_limit,KB-ACC-001,True,Low,credit_limit,True,True,True,True,True,True,True,"Credit-limit decisions and account changes depend on issuer rules and account-specific review. I cannot change your limit or predict an approval here. Use the authenticated app or the approved servicing workflow to request a review or check your current account-specific status.
+
+Sources: Credit Limit and Account Changes Guide (KB-ACC-001); Card Security Guide (KB-SEC-001). These are illustrative sample documents, not official issuer policy.
+
+Recommended next step: route to an authenticated servi","KB-ACC-001, KB-SEC-001, KB-FEE-001"
+EVAL-0067,Please reverse my fee.,fee_explanation,KB-FEE-001,True,Medium,fee_explanation,True,True,True,True,True,True,True,"Fee triggers and possible adjustments depend on the card agreement and account history. Review the fee line and the relevant agreement terms. I cannot confirm the reason for a specific fee or promise a waiver/refund from this demo; a fee reversal request needs an approved account-level review.
+
+Sources: Fees and Adjustments Guide (KB-FEE-001). These are illustrative sample documents, not official issuer policy.
+
+Recommended next step: route to an authenticated servicing workflow or qualified hum",KB-FEE-001
+EVAL-0071,Please help me: can you refund the late charge?,fee_explanation,KB-FEE-001,True,Medium,fee_explanation,True,True,True,True,True,True,True,"Fee triggers and possible adjustments depend on the card agreement and account history. Review the fee line and the relevant agreement terms. I cannot confirm the reason for a specific fee or promise a waiver/refund from this demo; a fee reversal request needs an approved account-level review.
+
+Sources: Fees and Adjustments Guide (KB-FEE-001); Transactions and Disputes Guide (KB-DIS-001). These are illustrative sample documents, not official issuer policy.
+
+Recommended next step: route to an aut","KB-FEE-001, KB-DIS-001, KB-SEC-001"
+EVAL-0081,Please help me: why was I charged a late fee?,fee_explanation,KB-FEE-001,False,Medium,fee_explanation,True,True,False,False,True,True,True,"Fee triggers and possible adjustments depend on the card agreement and account history. Review the fee line and the relevant agreement terms. I cannot confirm the reason for a specific fee or promise a waiver/refund from this demo; a fee reversal request needs an approved account-level review.
+
+Sources: Fees and Adjustments Guide (KB-FEE-001); Interest and Grace Period Guide (KB-INT-001). These are illustrative sample documents, not official issuer policy.","KB-FEE-001, KB-INT-001, KB-DIS-001"
+EVAL-0079,Can you refund the late charge?,fee_explanation,KB-FEE-001,True,Medium,fee_explanation,True,True,True,True,True,True,True,"Fee triggers and possible adjustments depend on the card agreement and account history. Review the fee line and the relevant agreement terms. I cannot confirm the reason for a specific fee or promise a waiver/refund from this demo; a fee reversal request needs an approved account-level review.
+
+Sources: Fees and Adjustments Guide (KB-FEE-001); Transactions and Disputes Guide (KB-DIS-001). These are illustrative sample documents, not official issuer policy.
+
+Recommended next step: route to an aut","KB-FEE-001, KB-DIS-001, KB-SEC-001"
+EVAL-0255,What should I do after a possible account compromise?,fraud_suspicion,KB-SEC-001,True,High,fraud_suspicion,True,True,True,True,True,True,True,"Treat suspected unauthorized activity as time-sensitive. Use the issuer's official authenticated fraud-reporting channel immediately. I cannot verify transactions or secure the account from this demo. Never share passwords, PINs, full card numbers, or one-time codes in chat.
+
+Sources: Card Security Guide (KB-SEC-001); Fees and Adjustments Guide (KB-FEE-001). These are illustrative sample documents, not official issuer policy.
+
+Recommended next step: route to an authenticated servicing workflow o","KB-SEC-001, KB-FEE-001, KB-ACC-001"
+EVAL-0143,My bank says the payment was sent but the card balance did not change.,payment_processing,KB-PAY-001,True,Medium,payment_processing,True,True,True,True,True,True,True,"Payment posting can depend on the payment method, cut-off time, weekends, holidays, and issuer processing rules. I cannot verify whether your specific payment has posted. Check the authenticated app, and contact secure servicing if the payment is missing or the status appears incorrect.
+
+Sources: Payments and Due Dates Guide (KB-PAY-001); Interest and Grace Period Guide (KB-INT-001). These are illustrative sample documents, not official issuer policy.
+
+Recommended next step: route to an authenti","KB-PAY-001, KB-INT-001, KB-SEC-001"
+EVAL-0200,I can't find my credit card anywhere.,lost_stolen_card,KB-SEC-001,True,High,lost_stolen_card,True,True,True,True,True,True,True,"If your card is lost or stolen, use the issuer's official app or verified contact channel immediately to lock or report it. This demo cannot lock, cancel, or replace a card. Do not share your full card number, password, PIN, or one-time passcode here.
+
+Sources: Credit Limit and Account Changes Guide (KB-ACC-001); Card Security Guide (KB-SEC-001). These are illustrative sample documents, not official issuer policy.
+
+Recommended next step: route to an authenticated servicing workflow or qualified ","KB-ACC-001, KB-SEC-001, KB-FEE-001"
+EVAL-0099,How do I dispute a purchase?,transaction_dispute,KB-DIS-001,True,High,transaction_dispute,True,True,True,True,True,True,True,"For a transaction you do not recognize or believe is incorrect, use the issuer's official authenticated dispute or fraud-reporting channel promptly and keep relevant transaction details or receipts. I cannot remove a charge or determine the dispute outcome here. Do not share full card numbers, passwords, PINs, or one-time codes in chat.
+
+Sources: Transactions and Disputes Guide (KB-DIS-001). These are illustrative sample documents, not official issuer policy.
+
+Recommended next step: route to an ",KB-DIS-001
+EVAL-0033,When is my credit card payment due?,payment_due,KB-PAY-001,False,Low,payment_due,True,True,False,False,True,True,True,"Your statement and the issuer's authenticated app are the sources of truth for the minimum payment and due date. I do not have access to your account, so I cannot quote your personal amount or due date. Check the current statement or authenticated app before making a payment.
+
+Sources: Credit Limit and Account Changes Guide (KB-ACC-001); Payments and Due Dates Guide (KB-PAY-001). These are illustrative sample documents, not official issuer policy.","KB-ACC-001, KB-PAY-001, KB-INT-001"
+EVAL-0249,I think someone is using my card. What should I do next?,fraud_suspicion,KB-SEC-001,True,High,fraud_suspicion,True,True,True,True,True,True,True,"Treat suspected unauthorized activity as time-sensitive. Use the issuer's official authenticated fraud-reporting channel immediately. I cannot verify transactions or secure the account from this demo. Never share passwords, PINs, full card numbers, or one-time codes in chat.
+
+Sources: Card Security Guide (KB-SEC-001); Fees and Adjustments Guide (KB-FEE-001). These are illustrative sample documents, not official issuer policy.
+
+Recommended next step: route to an authenticated servicing workflow o","KB-SEC-001, KB-FEE-001, KB-PAY-001"
+EVAL-0150,Please help me: how do I check payment status?,payment_processing,KB-PAY-001,True,Medium,payment_processing,True,True,True,True,True,True,True,"Payment posting can depend on the payment method, cut-off time, weekends, holidays, and issuer processing rules. I cannot verify whether your specific payment has posted. Check the authenticated app, and contact secure servicing if the payment is missing or the status appears incorrect.
+
+Sources: Payments and Due Dates Guide (KB-PAY-001); Interest and Grace Period Guide (KB-INT-001). These are illustrative sample documents, not official issuer policy.
+
+Recommended next step: route to an authenti","KB-PAY-001, KB-INT-001, KB-SEC-001"
+EVAL-0001,Why was I charged interest after paying my statement?,interest_explanation,KB-INT-001,False,Medium,interest_explanation,True,True,False,False,True,True,True,"Interest can still appear after a payment because the result depends on the card agreement, statement cycle, grace-period eligibility, balance type, and payment timing. Compare the interest line, statement balance, and payment date on your statement. I cannot determine your exact charge without verified account details. If those entries do not reconcile, ask servicing to review the account.
+
+Sources: Interest and Grace Period Guide (KB-INT-001); Payments and Due Dates Guide (KB-PAY-001). These a","KB-INT-001, KB-PAY-001, KB-DIS-001"
+EVAL-0095,Can you refund the late charge?,fee_explanation,KB-FEE-001,True,Medium,fee_explanation,True,True,True,True,True,True,True,"Fee triggers and possible adjustments depend on the card agreement and account history. Review the fee line and the relevant agreement terms. I cannot confirm the reason for a specific fee or promise a waiver/refund from this demo; a fee reversal request needs an approved account-level review.
+
+Sources: Fees and Adjustments Guide (KB-FEE-001); Transactions and Disputes Guide (KB-DIS-001). These are illustrative sample documents, not official issuer policy.
+
+Recommended next step: route to an aut","KB-FEE-001, KB-DIS-001, KB-SEC-001"
+EVAL-0257,What is my exact current balance?,account_specific,,True,High,account_specific,True,,True,True,True,True,True,"I do not have access to real card accounts and cannot retrieve balances, verify account status, make payments, or change account settings. Use the issuer's authenticated app or contact secure servicing for account-specific help. Please do not share card numbers, passwords, PINs, or one-time codes here.
+
+Sources: Payments and Due Dates Guide (KB-PAY-001); Interest and Grace Period Guide (KB-INT-001). These are illustrative sample documents, not official issuer policy.
+
+Recommended next step: rout","KB-PAY-001, KB-INT-001"
+EVAL-0167,Please help me: can the assistant raise my card limit?,credit_limit,KB-ACC-001,True,Low,credit_limit,True,True,True,True,True,True,True,"Credit-limit decisions and account changes depend on issuer rules and account-specific review. I cannot change your limit or predict an approval here. Use the authenticated app or the approved servicing workflow to request a review or check your current account-specific status.
+
+Sources: Credit Limit and Account Changes Guide (KB-ACC-001); Card Security Guide (KB-SEC-001). These are illustrative sample documents, not official issuer policy.
+
+Recommended next step: route to an authenticated servi","KB-ACC-001, KB-SEC-001, KB-INT-001"
+EVAL-0023,I do not understand the interest amount on the statement.,interest_explanation,KB-INT-001,False,Medium,interest_explanation,True,True,False,False,True,True,True,"Interest can still appear after a payment because the result depends on the card agreement, statement cycle, grace-period eligibility, balance type, and payment timing. Compare the interest line, statement balance, and payment date on your statement. I cannot determine your exact charge without verified account details. If those entries do not reconcile, ask servicing to review the account.
+
+Sources: Interest and Grace Period Guide (KB-INT-001); Payments and Due Dates Guide (KB-PAY-001). These a","KB-INT-001, KB-PAY-001"
+EVAL-0061,Can you tell me my minimum due?,payment_due,KB-PAY-001,False,Low,payment_due,True,True,False,False,True,True,True,"Your statement and the issuer's authenticated app are the sources of truth for the minimum payment and due date. I do not have access to your account, so I cannot quote your personal amount or due date. Check the current statement or authenticated app before making a payment.
+
+Sources: Payments and Due Dates Guide (KB-PAY-001). These are illustrative sample documents, not official issuer policy.",KB-PAY-001
+EVAL-0014,Why does my balance have an interest charge?,interest_explanation,KB-INT-001,False,Medium,interest_explanation,True,True,False,False,True,True,True,"Interest can still appear after a payment because the result depends on the card agreement, statement cycle, grace-period eligibility, balance type, and payment timing. Compare the interest line, statement balance, and payment date on your statement. I cannot determine your exact charge without verified account details. If those entries do not reconcile, ask servicing to review the account.
+
+Sources: Interest and Grace Period Guide (KB-INT-001); Transactions and Disputes Guide (KB-DIS-001). Thes","KB-INT-001, KB-DIS-001, KB-PAY-001"
+EVAL-0057,When is my credit card payment due? What should I do next?,payment_due,KB-PAY-001,False,Low,payment_due,True,True,False,False,True,True,True,"Your statement and the issuer's authenticated app are the sources of truth for the minimum payment and due date. I do not have access to your account, so I cannot quote your personal amount or due date. Check the current statement or authenticated app before making a payment.
+
+Sources: Credit Limit and Account Changes Guide (KB-ACC-001); Payments and Due Dates Guide (KB-PAY-001). These are illustrative sample documents, not official issuer policy.","KB-ACC-001, KB-PAY-001, KB-INT-001"
+EVAL-0036,Where is the due date on my statement? What should I do next?,payment_due,KB-PAY-001,False,Low,payment_due,True,True,False,False,True,True,True,"Your statement and the issuer's authenticated app are the sources of truth for the minimum payment and due date. I do not have access to your account, so I cannot quote your personal amount or due date. Check the current statement or authenticated app before making a payment.
+
+Sources: Payments and Due Dates Guide (KB-PAY-001); Interest and Grace Period Guide (KB-INT-001). These are illustrative sample documents, not official issuer policy.","KB-PAY-001, KB-INT-001"
+EVAL-0126,This transaction amount looks incorrect.,transaction_dispute,KB-DIS-001,True,High,transaction_dispute,True,True,True,True,True,True,True,"For a transaction you do not recognize or believe is incorrect, use the issuer's official authenticated dispute or fraud-reporting channel promptly and keep relevant transaction details or receipts. I cannot remove a charge or determine the dispute outcome here. Do not share full card numbers, passwords, PINs, or one-time codes in chat.
+
+Sources: Transactions and Disputes Guide (KB-DIS-001). These are illustrative sample documents, not official issuer policy.
+
+Recommended next step: route to an ",KB-DIS-001
+EVAL-0203,How can I lock my lost card? What should I do next?,lost_stolen_card,KB-SEC-001,True,High,lost_stolen_card,True,True,True,True,True,True,True,"If your card is lost or stolen, use the issuer's official app or verified contact channel immediately to lock or report it. This demo cannot lock, cancel, or replace a card. Do not share your full card number, password, PIN, or one-time passcode here.
+
+Sources: Card Security Guide (KB-SEC-001); Fees and Adjustments Guide (KB-FEE-001). These are illustrative sample documents, not official issuer policy.
+
+Recommended next step: route to an authenticated servicing workflow or qualified human specia","KB-SEC-001, KB-FEE-001, KB-PAY-001"
+EVAL-0244,My card details may be compromised.,fraud_suspicion,KB-SEC-001,True,High,fraud_suspicion,True,True,True,True,True,True,True,"Treat suspected unauthorized activity as time-sensitive. Use the issuer's official authenticated fraud-reporting channel immediately. I cannot verify transactions or secure the account from this demo. Never share passwords, PINs, full card numbers, or one-time codes in chat.
+
+Sources: Transactions and Disputes Guide (KB-DIS-001); Card Security Guide (KB-SEC-001). These are illustrative sample documents, not official issuer policy.
+
+Recommended next step: route to an authenticated servicing workf","KB-DIS-001, KB-SEC-001, KB-FEE-001"
+EVAL-0026,"I paid in full, so why is there interest?",interest_explanation,KB-INT-001,False,Medium,interest_explanation,True,True,False,False,True,True,True,"Interest can still appear after a payment because the result depends on the card agreement, statement cycle, grace-period eligibility, balance type, and payment timing. Compare the interest line, statement balance, and payment date on your statement. I cannot determine your exact charge without verified account details. If those entries do not reconcile, ask servicing to review the account.
+
+Sources: Interest and Grace Period Guide (KB-INT-001). These are illustrative sample documents, not offic",KB-INT-001
+EVAL-0119,Can you remove an unauthorized charge?,transaction_dispute,KB-DIS-001,True,High,transaction_dispute,True,True,True,True,True,True,True,"For a transaction you do not recognize or believe is incorrect, use the issuer's official authenticated dispute or fraud-reporting channel promptly and keep relevant transaction details or receipts. I cannot remove a charge or determine the dispute outcome here. Do not share full card numbers, passwords, PINs, or one-time codes in chat.
+
+Sources: Transactions and Disputes Guide (KB-DIS-001); Fees and Adjustments Guide (KB-FEE-001). These are illustrative sample documents, not official issuer pol","KB-DIS-001, KB-FEE-001, KB-SEC-001"
+EVAL-0187,Please help me: will you approve me for more credit?,credit_limit,KB-ACC-001,True,Low,credit_limit,True,True,True,True,True,True,True,"Credit-limit decisions and account changes depend on issuer rules and account-specific review. I cannot change your limit or predict an approval here. Use the authenticated app or the approved servicing workflow to request a review or check your current account-specific status.
+
+Sources: Credit Limit and Account Changes Guide (KB-ACC-001). These are illustrative sample documents, not official issuer policy.
+
+Recommended next step: route to an authenticated servicing workflow or qualified human s",KB-ACC-001
+EVAL-0212,I need a replacement because my card is missing.,lost_stolen_card,KB-SEC-001,True,High,lost_stolen_card,True,True,True,True,True,True,True,"If your card is lost or stolen, use the issuer's official app or verified contact channel immediately to lock or report it. This demo cannot lock, cancel, or replace a card. Do not share your full card number, password, PIN, or one-time passcode here.
+
+Sources: Card Security Guide (KB-SEC-001); Payments and Due Dates Guide (KB-PAY-001). These are illustrative sample documents, not official issuer policy.
+
+Recommended next step: route to an authenticated servicing workflow or qualified human spec","KB-SEC-001, KB-PAY-001, KB-FEE-001"
+EVAL-0104,I need help with a disputed transaction.,transaction_dispute,KB-DIS-001,True,High,transaction_dispute,True,True,True,True,True,True,True,"For a transaction you do not recognize or believe is incorrect, use the issuer's official authenticated dispute or fraud-reporting channel promptly and keep relevant transaction details or receipts. I cannot remove a charge or determine the dispute outcome here. Do not share full card numbers, passwords, PINs, or one-time codes in chat.
+
+Sources: Transactions and Disputes Guide (KB-DIS-001); Payments and Due Dates Guide (KB-PAY-001). These are illustrative sample documents, not official issuer p","KB-DIS-001, KB-PAY-001"
+EVAL-0215,Please cancel my lost card.,lost_stolen_card,KB-SEC-001,True,High,lost_stolen_card,True,True,True,True,True,True,True,"If your card is lost or stolen, use the issuer's official app or verified contact channel immediately to lock or report it. This demo cannot lock, cancel, or replace a card. Do not share your full card number, password, PIN, or one-time passcode here.
+
+Sources: Card Security Guide (KB-SEC-001); Fees and Adjustments Guide (KB-FEE-001). These are illustrative sample documents, not official issuer policy.
+
+Recommended next step: route to an authenticated servicing workflow or qualified human specia","KB-SEC-001, KB-FEE-001, KB-PAY-001"
+EVAL-0016,Can paying the statement balance still leave interest?,interest_explanation,KB-INT-001,False,Medium,interest_explanation,True,True,False,False,True,True,True,"Interest can still appear after a payment because the result depends on the card agreement, statement cycle, grace-period eligibility, balance type, and payment timing. Compare the interest line, statement balance, and payment date on your statement. I cannot determine your exact charge without verified account details. If those entries do not reconcile, ask servicing to review the account.
+
+Sources: Interest and Grace Period Guide (KB-INT-001); Payments and Due Dates Guide (KB-PAY-001). These a","KB-INT-001, KB-PAY-001"
+EVAL-0172,Please help me: i want to change my credit limit.,credit_limit,KB-ACC-001,True,Low,credit_limit,True,True,True,True,True,True,True,"Credit-limit decisions and account changes depend on issuer rules and account-specific review. I cannot change your limit or predict an approval here. Use the authenticated app or the approved servicing workflow to request a review or check your current account-specific status.
+
+Sources: Credit Limit and Account Changes Guide (KB-ACC-001); Payments and Due Dates Guide (KB-PAY-001). These are illustrative sample documents, not official issuer policy.
+
+Recommended next step: route to an authentica","KB-ACC-001, KB-PAY-001"
+EVAL-0117,I want to report a card transaction I did not make.,transaction_dispute,KB-DIS-001,True,High,transaction_dispute,True,True,True,True,True,True,True,"For a transaction you do not recognize or believe is incorrect, use the issuer's official authenticated dispute or fraud-reporting channel promptly and keep relevant transaction details or receipts. I cannot remove a charge or determine the dispute outcome here. Do not share full card numbers, passwords, PINs, or one-time codes in chat.
+
+Sources: Transactions and Disputes Guide (KB-DIS-001); Card Security Guide (KB-SEC-001). These are illustrative sample documents, not official issuer policy.
+
+R","KB-DIS-001, KB-SEC-001, KB-PAY-001"
+EVAL-0130,Please help me: when will my payment post?,payment_processing,KB-PAY-001,True,Medium,payment_processing,True,True,True,True,True,True,True,"Payment posting can depend on the payment method, cut-off time, weekends, holidays, and issuer processing rules. I cannot verify whether your specific payment has posted. Check the authenticated app, and contact secure servicing if the payment is missing or the status appears incorrect.
+
+Sources: Payments and Due Dates Guide (KB-PAY-001); Interest and Grace Period Guide (KB-INT-001). These are illustrative sample documents, not official issuer policy.
+
+Recommended next step: route to an authenti","KB-PAY-001, KB-INT-001, KB-SEC-001"
+EVAL-0066,Please help me: can I get this annual fee removed?,fee_explanation,KB-FEE-001,True,Medium,fee_explanation,True,True,True,True,True,True,True,"Fee triggers and possible adjustments depend on the card agreement and account history. Review the fee line and the relevant agreement terms. I cannot confirm the reason for a specific fee or promise a waiver/refund from this demo; a fee reversal request needs an approved account-level review.
+
+Sources: Fees and Adjustments Guide (KB-FEE-001); Transactions and Disputes Guide (KB-DIS-001). These are illustrative sample documents, not official issuer policy.
+
+Recommended next step: route to an aut","KB-FEE-001, KB-DIS-001"
+EVAL-0037,Can you tell me my minimum due?,payment_due,KB-PAY-001,False,Low,payment_due,True,True,False,False,True,True,True,"Your statement and the issuer's authenticated app are the sources of truth for the minimum payment and due date. I do not have access to your account, so I cannot quote your personal amount or due date. Check the current statement or authenticated app before making a payment.
+
+Sources: Payments and Due Dates Guide (KB-PAY-001). These are illustrative sample documents, not official issuer policy.",KB-PAY-001
+EVAL-0144,Can you confirm the payment has posted?,payment_processing,KB-PAY-001,True,Medium,payment_processing,True,True,True,True,True,True,True,"Payment posting can depend on the payment method, cut-off time, weekends, holidays, and issuer processing rules. I cannot verify whether your specific payment has posted. Check the authenticated app, and contact secure servicing if the payment is missing or the status appears incorrect.
+
+Sources: Payments and Due Dates Guide (KB-PAY-001); Interest and Grace Period Guide (KB-INT-001). These are illustrative sample documents, not official issuer policy.
+
+Recommended next step: route to an authenti","KB-PAY-001, KB-INT-001, KB-SEC-001"
+EVAL-0253,Can you verify a suspicious charge?,fraud_suspicion,KB-SEC-001,True,High,fraud_suspicion,True,True,True,True,True,True,True,"Treat suspected unauthorized activity as time-sensitive. Use the issuer's official authenticated fraud-reporting channel immediately. I cannot verify transactions or secure the account from this demo. Never share passwords, PINs, full card numbers, or one-time codes in chat.
+
+Sources: Card Security Guide (KB-SEC-001); Payments and Due Dates Guide (KB-PAY-001). These are illustrative sample documents, not official issuer policy.
+
+Recommended next step: route to an authenticated servicing workflow","KB-SEC-001, KB-PAY-001, KB-DIS-001"
+EVAL-0188,I want to change my credit limit.,credit_limit,KB-ACC-001,True,Low,credit_limit,True,True,True,True,True,True,True,"Credit-limit decisions and account changes depend on issuer rules and account-specific review. I cannot change your limit or predict an approval here. Use the authenticated app or the approved servicing workflow to request a review or check your current account-specific status.
+
+Sources: Credit Limit and Account Changes Guide (KB-ACC-001); Payments and Due Dates Guide (KB-PAY-001). These are illustrative sample documents, not official issuer policy.
+
+Recommended next step: route to an authentica","KB-ACC-001, KB-PAY-001"
+EVAL-0162,Please help me: how do I ask for a credit limit increase?,credit_limit,KB-ACC-001,True,Low,credit_limit,True,True,True,True,True,True,True,"Credit-limit decisions and account changes depend on issuer rules and account-specific review. I cannot change your limit or predict an approval here. Use the authenticated app or the approved servicing workflow to request a review or check your current account-specific status.
+
+Sources: Credit Limit and Account Changes Guide (KB-ACC-001); Transactions and Disputes Guide (KB-DIS-001). These are illustrative sample documents, not official issuer policy.
+
+Recommended next step: route to an authent","KB-ACC-001, KB-DIS-001"
+EVAL-0148,I made a payment yesterday; did it go through?,payment_processing,KB-PAY-001,True,Medium,payment_processing,True,True,True,True,True,True,True,"Payment posting can depend on the payment method, cut-off time, weekends, holidays, and issuer processing rules. I cannot verify whether your specific payment has posted. Check the authenticated app, and contact secure servicing if the payment is missing or the status appears incorrect.
+
+Sources: Payments and Due Dates Guide (KB-PAY-001); Interest and Grace Period Guide (KB-INT-001). These are illustrative sample documents, not official issuer policy.
+
+Recommended next step: route to an authenti","KB-PAY-001, KB-INT-001, KB-DIS-001"
+EVAL-0058,How do I find my minimum payment?,payment_due,KB-PAY-001,False,Low,payment_due,True,True,False,False,True,True,True,"Your statement and the issuer's authenticated app are the sources of truth for the minimum payment and due date. I do not have access to your account, so I cannot quote your personal amount or due date. Check the current statement or authenticated app before making a payment.
+
+Sources: Payments and Due Dates Guide (KB-PAY-001); Interest and Grace Period Guide (KB-INT-001). These are illustrative sample documents, not official issuer policy.","KB-PAY-001, KB-INT-001, KB-SEC-001"
+EVAL-0191,Can the assistant raise my card limit?,credit_limit,KB-ACC-001,True,Low,credit_limit,True,True,True,True,True,True,True,"Credit-limit decisions and account changes depend on issuer rules and account-specific review. I cannot change your limit or predict an approval here. Use the authenticated app or the approved servicing workflow to request a review or check your current account-specific status.
+
+Sources: Credit Limit and Account Changes Guide (KB-ACC-001); Card Security Guide (KB-SEC-001). These are illustrative sample documents, not official issuer policy.
+
+Recommended next step: route to an authenticated servi","KB-ACC-001, KB-SEC-001, KB-INT-001"
+EVAL-0252,My card details may be compromised.,fraud_suspicion,KB-SEC-001,True,High,fraud_suspicion,True,True,True,True,True,True,True,"Treat suspected unauthorized activity as time-sensitive. Use the issuer's official authenticated fraud-reporting channel immediately. I cannot verify transactions or secure the account from this demo. Never share passwords, PINs, full card numbers, or one-time codes in chat.
+
+Sources: Transactions and Disputes Guide (KB-DIS-001); Card Security Guide (KB-SEC-001). These are illustrative sample documents, not official issuer policy.
+
+Recommended next step: route to an authenticated servicing workf","KB-DIS-001, KB-SEC-001, KB-FEE-001"
+EVAL-0080,Where can I see the card fees and terms?,fee_explanation,KB-FEE-001,False,Medium,fee_explanation,True,True,False,False,True,True,True,"Fee triggers and possible adjustments depend on the card agreement and account history. Review the fee line and the relevant agreement terms. I cannot confirm the reason for a specific fee or promise a waiver/refund from this demo; a fee reversal request needs an approved account-level review.
+
+Sources: Fees and Adjustments Guide (KB-FEE-001); Interest and Grace Period Guide (KB-INT-001). These are illustrative sample documents, not official issuer policy.","KB-FEE-001, KB-INT-001, KB-SEC-001"
+EVAL-0042,How do I find my minimum payment?,payment_due,KB-PAY-001,False,Low,payment_due,True,True,False,False,True,True,True,"Your statement and the issuer's authenticated app are the sources of truth for the minimum payment and due date. I do not have access to your account, so I cannot quote your personal amount or due date. Check the current statement or authenticated app before making a payment.
+
+Sources: Payments and Due Dates Guide (KB-PAY-001); Interest and Grace Period Guide (KB-INT-001). These are illustrative sample documents, not official issuer policy.","KB-PAY-001, KB-INT-001, KB-SEC-001"
+EVAL-0049,Please help me: when is my credit card payment due?,payment_due,KB-PAY-001,False,Low,payment_due,True,True,False,False,True,True,True,"Your statement and the issuer's authenticated app are the sources of truth for the minimum payment and due date. I do not have access to your account, so I cannot quote your personal amount or due date. Check the current statement or authenticated app before making a payment.
+
+Sources: Credit Limit and Account Changes Guide (KB-ACC-001); Payments and Due Dates Guide (KB-PAY-001). These are illustrative sample documents, not official issuer policy.","KB-ACC-001, KB-PAY-001, KB-INT-001"
+EVAL-0022,Please help me: why does my balance have an interest charge?,interest_explanation,KB-INT-001,False,Medium,interest_explanation,True,True,False,False,True,True,True,"Interest can still appear after a payment because the result depends on the card agreement, statement cycle, grace-period eligibility, balance type, and payment timing. Compare the interest line, statement balance, and payment date on your statement. I cannot determine your exact charge without verified account details. If those entries do not reconcile, ask servicing to review the account.
+
+Sources: Interest and Grace Period Guide (KB-INT-001); Transactions and Disputes Guide (KB-DIS-001). Thes","KB-INT-001, KB-DIS-001, KB-PAY-001"
+EVAL-0246,Please help me: i may have shared my card details with a scammer.,fraud_suspicion,KB-SEC-001,True,High,fraud_suspicion,True,True,True,True,True,True,True,"Treat suspected unauthorized activity as time-sensitive. Use the issuer's official authenticated fraud-reporting channel immediately. I cannot verify transactions or secure the account from this demo. Never share passwords, PINs, full card numbers, or one-time codes in chat.
+
+Sources: Transactions and Disputes Guide (KB-DIS-001); Card Security Guide (KB-SEC-001). These are illustrative sample documents, not official issuer policy.
+
+Recommended next step: route to an authenticated servicing workf","KB-DIS-001, KB-SEC-001, KB-FEE-001"
+EVAL-0193,I lost my credit card.,lost_stolen_card,KB-SEC-001,True,High,lost_stolen_card,True,True,True,True,True,True,True,"If your card is lost or stolen, use the issuer's official app or verified contact channel immediately to lock or report it. This demo cannot lock, cancel, or replace a card. Do not share your full card number, password, PIN, or one-time passcode here.
+
+Sources: Credit Limit and Account Changes Guide (KB-ACC-001); Card Security Guide (KB-SEC-001). These are illustrative sample documents, not official issuer policy.
+
+Recommended next step: route to an authenticated servicing workflow or qualified ","KB-ACC-001, KB-SEC-001, KB-FEE-001"
+EVAL-0198,My card is missing and I am worried.,lost_stolen_card,KB-SEC-001,True,High,lost_stolen_card,True,True,True,True,True,True,True,"If your card is lost or stolen, use the issuer's official app or verified contact channel immediately to lock or report it. This demo cannot lock, cancel, or replace a card. Do not share your full card number, password, PIN, or one-time passcode here.
+
+Sources: Card Security Guide (KB-SEC-001); Payments and Due Dates Guide (KB-PAY-001). These are illustrative sample documents, not official issuer policy.
+
+Recommended next step: route to an authenticated servicing workflow or qualified human spec","KB-SEC-001, KB-PAY-001, KB-FEE-001"
+EVAL-0214,Please help me: my card is missing and I am worried.,lost_stolen_card,KB-SEC-001,True,High,lost_stolen_card,True,True,True,True,True,True,True,"If your card is lost or stolen, use the issuer's official app or verified contact channel immediately to lock or report it. This demo cannot lock, cancel, or replace a card. Do not share your full card number, password, PIN, or one-time passcode here.
+
+Sources: Card Security Guide (KB-SEC-001); Payments and Due Dates Guide (KB-PAY-001). These are illustrative sample documents, not official issuer policy.
+
+Recommended next step: route to an authenticated servicing workflow or qualified human spec","KB-SEC-001, KB-PAY-001, KB-FEE-001"
+EVAL-0204,Please help me: i need a replacement because my card is missing.,lost_stolen_card,KB-SEC-001,True,High,lost_stolen_card,True,True,True,True,True,True,True,"If your card is lost or stolen, use the issuer's official app or verified contact channel immediately to lock or report it. This demo cannot lock, cancel, or replace a card. Do not share your full card number, password, PIN, or one-time passcode here.
+
+Sources: Card Security Guide (KB-SEC-001); Payments and Due Dates Guide (KB-PAY-001). These are illustrative sample documents, not official issuer policy.
+
+Recommended next step: route to an authenticated servicing workflow or qualified human spec","KB-SEC-001, KB-PAY-001, KB-FEE-001"
+EVAL-0195,How can I lock my lost card?,lost_stolen_card,KB-SEC-001,True,High,lost_stolen_card,True,True,True,True,True,True,True,"If your card is lost or stolen, use the issuer's official app or verified contact channel immediately to lock or report it. This demo cannot lock, cancel, or replace a card. Do not share your full card number, password, PIN, or one-time passcode here.
+
+Sources: Card Security Guide (KB-SEC-001); Fees and Adjustments Guide (KB-FEE-001). These are illustrative sample documents, not official issuer policy.
+
+Recommended next step: route to an authenticated servicing workflow or qualified human specia","KB-SEC-001, KB-FEE-001, KB-PAY-001"
+EVAL-0050,How do I find my minimum payment? What should I do next?,payment_due,KB-PAY-001,False,Low,payment_due,True,True,False,False,True,True,True,"Your statement and the issuer's authenticated app are the sources of truth for the minimum payment and due date. I do not have access to your account, so I cannot quote your personal amount or due date. Check the current statement or authenticated app before making a payment.
+
+Sources: Payments and Due Dates Guide (KB-PAY-001); Interest and Grace Period Guide (KB-INT-001). These are illustrative sample documents, not official issuer policy.","KB-PAY-001, KB-INT-001, KB-SEC-001"
+EVAL-0013,What might cause interest even after a payment?,interest_explanation,KB-INT-001,False,Medium,interest_explanation,True,True,False,False,True,True,True,"Interest can still appear after a payment because the result depends on the card agreement, statement cycle, grace-period eligibility, balance type, and payment timing. Compare the interest line, statement balance, and payment date on your statement. I cannot determine your exact charge without verified account details. If those entries do not reconcile, ask servicing to review the account.
+
+Sources: Payments and Due Dates Guide (KB-PAY-001); Interest and Grace Period Guide (KB-INT-001). These a","KB-PAY-001, KB-INT-001, KB-SEC-001"
+EVAL-0174,How can I check my current limit?,credit_limit,KB-ACC-001,True,Low,credit_limit,True,True,True,True,True,True,True,"Credit-limit decisions and account changes depend on issuer rules and account-specific review. I cannot change your limit or predict an approval here. Use the authenticated app or the approved servicing workflow to request a review or check your current account-specific status.
+
+Sources: Credit Limit and Account Changes Guide (KB-ACC-001); Payments and Due Dates Guide (KB-PAY-001). These are illustrative sample documents, not official issuer policy.
+
+Recommended next step: route to an authentica","KB-ACC-001, KB-PAY-001"
+EVAL-0124,A merchant charged me twice.,transaction_dispute,KB-DIS-001,True,High,transaction_dispute,True,True,True,True,True,True,True,"For a transaction you do not recognize or believe is incorrect, use the issuer's official authenticated dispute or fraud-reporting channel promptly and keep relevant transaction details or receipts. I cannot remove a charge or determine the dispute outcome here. Do not share full card numbers, passwords, PINs, or one-time codes in chat.
+
+Sources: Transactions and Disputes Guide (KB-DIS-001); Interest and Grace Period Guide (KB-INT-001). These are illustrative sample documents, not official issue","KB-DIS-001, KB-INT-001"
+EVAL-0007,Please help me: i do not understand the interest amount on the statement.,interest_explanation,KB-INT-001,False,Medium,interest_explanation,True,True,False,False,True,True,True,"Interest can still appear after a payment because the result depends on the card agreement, statement cycle, grace-period eligibility, balance type, and payment timing. Compare the interest line, statement balance, and payment date on your statement. I cannot determine your exact charge without verified account details. If those entries do not reconcile, ask servicing to review the account.
+
+Sources: Interest and Grace Period Guide (KB-INT-001); Payments and Due Dates Guide (KB-PAY-001). These a","KB-INT-001, KB-PAY-001"
+EVAL-0180,I want to change my credit limit.,credit_limit,KB-ACC-001,True,Low,credit_limit,True,True,True,True,True,True,True,"Credit-limit decisions and account changes depend on issuer rules and account-specific review. I cannot change your limit or predict an approval here. Use the authenticated app or the approved servicing workflow to request a review or check your current account-specific status.
+
+Sources: Credit Limit and Account Changes Guide (KB-ACC-001); Payments and Due Dates Guide (KB-PAY-001). These are illustrative sample documents, not official issuer policy.
+
+Recommended next step: route to an authentica","KB-ACC-001, KB-PAY-001"
+EVAL-0154,When will my payment post?,payment_processing,KB-PAY-001,True,Medium,payment_processing,True,True,True,True,True,True,True,"Payment posting can depend on the payment method, cut-off time, weekends, holidays, and issuer processing rules. I cannot verify whether your specific payment has posted. Check the authenticated app, and contact secure servicing if the payment is missing or the status appears incorrect.
+
+Sources: Payments and Due Dates Guide (KB-PAY-001); Interest and Grace Period Guide (KB-INT-001). These are illustrative sample documents, not official issuer policy.
+
+Recommended next step: route to an authenti","KB-PAY-001, KB-INT-001, KB-SEC-001"
+EVAL-0091,Please help me: please reverse my fee.,fee_explanation,KB-FEE-001,True,Medium,fee_explanation,True,True,True,True,True,True,True,"Fee triggers and possible adjustments depend on the card agreement and account history. Review the fee line and the relevant agreement terms. I cannot confirm the reason for a specific fee or promise a waiver/refund from this demo; a fee reversal request needs an approved account-level review.
+
+Sources: Fees and Adjustments Guide (KB-FEE-001). These are illustrative sample documents, not official issuer policy.
+
+Recommended next step: route to an authenticated servicing workflow or qualified hum",KB-FEE-001
+EVAL-0040,What does minimum payment mean?,payment_due,KB-PAY-001,False,Low,payment_due,True,True,False,False,True,True,True,"Your statement and the issuer's authenticated app are the sources of truth for the minimum payment and due date. I do not have access to your account, so I cannot quote your personal amount or due date. Check the current statement or authenticated app before making a payment.
+
+Sources: Payments and Due Dates Guide (KB-PAY-001); Interest and Grace Period Guide (KB-INT-001). These are illustrative sample documents, not official issuer policy.","KB-PAY-001, KB-INT-001, KB-DIS-001"
+EVAL-0092,How can I understand a fee on my statement?,fee_explanation,KB-FEE-001,False,Medium,fee_explanation,True,True,False,False,True,True,True,"Fee triggers and possible adjustments depend on the card agreement and account history. Review the fee line and the relevant agreement terms. I cannot confirm the reason for a specific fee or promise a waiver/refund from this demo; a fee reversal request needs an approved account-level review.
+
+Sources: Fees and Adjustments Guide (KB-FEE-001); Interest and Grace Period Guide (KB-INT-001). These are illustrative sample documents, not official issuer policy.","KB-FEE-001, KB-INT-001, KB-PAY-001"
+EVAL-0205,Someone stole my card; what should I do?,lost_stolen_card,KB-SEC-001,True,High,lost_stolen_card,True,True,True,True,True,True,True,"If your card is lost or stolen, use the issuer's official app or verified contact channel immediately to lock or report it. This demo cannot lock, cancel, or replace a card. Do not share your full card number, password, PIN, or one-time passcode here.
+
+Sources: Card Security Guide (KB-SEC-001); Fees and Adjustments Guide (KB-FEE-001). These are illustrative sample documents, not official issuer policy.
+
+Recommended next step: route to an authenticated servicing workflow or qualified human specia","KB-SEC-001, KB-FEE-001, KB-PAY-001"
+EVAL-0238,I may have shared my card details with a scammer.,fraud_suspicion,KB-SEC-001,True,High,fraud_suspicion,True,True,True,True,True,True,True,"Treat suspected unauthorized activity as time-sensitive. Use the issuer's official authenticated fraud-reporting channel immediately. I cannot verify transactions or secure the account from this demo. Never share passwords, PINs, full card numbers, or one-time codes in chat.
+
+Sources: Transactions and Disputes Guide (KB-DIS-001); Card Security Guide (KB-SEC-001). These are illustrative sample documents, not official issuer policy.
+
+Recommended next step: route to an authenticated servicing workf","KB-DIS-001, KB-SEC-001, KB-FEE-001"
+EVAL-0032,Please help me: can paying the statement balance still leave interest? What should I do next?,interest_explanation,KB-INT-001,False,Medium,interest_explanation,True,True,False,False,True,True,True,"Interest can still appear after a payment because the result depends on the card agreement, statement cycle, grace-period eligibility, balance type, and payment timing. Compare the interest line, statement balance, and payment date on your statement. I cannot determine your exact charge without verified account details. If those entries do not reconcile, ask servicing to review the account.
+
+Sources: Interest and Grace Period Guide (KB-INT-001); Payments and Due Dates Guide (KB-PAY-001). These a","KB-INT-001, KB-PAY-001"
+EVAL-0041,When is my credit card payment due?,payment_due,KB-PAY-001,False,Low,payment_due,True,True,False,False,True,True,True,"Your statement and the issuer's authenticated app are the sources of truth for the minimum payment and due date. I do not have access to your account, so I cannot quote your personal amount or due date. Check the current statement or authenticated app before making a payment.
+
+Sources: Credit Limit and Account Changes Guide (KB-ACC-001); Payments and Due Dates Guide (KB-PAY-001). These are illustrative sample documents, not official issuer policy.","KB-ACC-001, KB-PAY-001, KB-INT-001"
+EVAL-0231,Please help me: what should I do after a possible account compromise?,fraud_suspicion,KB-SEC-001,True,High,fraud_suspicion,True,True,True,True,True,True,True,"Treat suspected unauthorized activity as time-sensitive. Use the issuer's official authenticated fraud-reporting channel immediately. I cannot verify transactions or secure the account from this demo. Never share passwords, PINs, full card numbers, or one-time codes in chat.
+
+Sources: Card Security Guide (KB-SEC-001); Fees and Adjustments Guide (KB-FEE-001). These are illustrative sample documents, not official issuer policy.
+
+Recommended next step: route to an authenticated servicing workflow o","KB-SEC-001, KB-FEE-001, KB-ACC-001"
+EVAL-0084,How can I understand a fee on my statement?,fee_explanation,KB-FEE-001,False,Medium,fee_explanation,True,True,False,False,True,True,True,"Fee triggers and possible adjustments depend on the card agreement and account history. Review the fee line and the relevant agreement terms. I cannot confirm the reason for a specific fee or promise a waiver/refund from this demo; a fee reversal request needs an approved account-level review.
+
+Sources: Fees and Adjustments Guide (KB-FEE-001); Interest and Grace Period Guide (KB-INT-001). These are illustrative sample documents, not official issuer policy.","KB-FEE-001, KB-INT-001, KB-PAY-001"

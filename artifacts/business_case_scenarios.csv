@@ -1,0 +1,4 @@
+Scenario,Containment rate,Annual in-scope contacts,Gross labor savings,Annual AI + platform cost,Steady-state net benefit,Year 1 net benefit
+Conservative,0.15,181700.0,92385.65,104072.0,-11686.350000000006,-111686.35
+Base case,0.3,181700.0,224365.15,68170.0,156195.15,76195.15
+Upside,0.42,181700.0,351065.47,57719.0,293346.47,223346.46999999997
